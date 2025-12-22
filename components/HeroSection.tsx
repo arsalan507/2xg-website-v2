@@ -20,7 +20,7 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-graphite-dark">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-graphite-dark pt-20">
       {/* Animated Gradient Background */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div

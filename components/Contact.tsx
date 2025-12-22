@@ -2,6 +2,7 @@
 
 import { motion, useInView } from 'framer-motion';
 import { useRef, useState } from 'react';
+import Button from './ui/Button';
 
 export default function Contact() {
   const ref = useRef(null);
@@ -147,7 +148,7 @@ export default function Contact() {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <form onSubmit={handleSubmit} className="relative bg-gradient-to-br from-graphite via-graphite to-graphite-dark rounded-2xl p-8 sm:p-10 border-2 border-neon-green/30 shadow-2xl shadow-neon-green/10 hover:border-neon-green/50 transition-all duration-500">
+            <form onSubmit={handleSubmit} className="relative bg-gradient-to-br from-graphite via-graphite to-graphite-dark rounded-2xl p-8 sm:p-10 border-4 border-[#8CE63A]/50 shadow-2xl shadow-[#8CE63A]/20 hover:border-[#8CE63A]/70 transition-all duration-500 ring-2 ring-[#8CE63A]/20">
               {/* Decorative corner accent */}
               <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-neon-green/10 to-transparent rounded-bl-full" />
               <div className="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-tr from-deep-blue/10 to-transparent rounded-tr-full" />
@@ -175,7 +176,7 @@ export default function Contact() {
                     value={formState.name}
                     onChange={handleChange}
                     required
-                    className="w-full bg-black/40 border-2 border-deep-blue/60 focus:border-neon-green focus:bg-black/60 focus:shadow-lg focus:shadow-neon-green/20 rounded-lg px-5 py-4 text-off-white font-inter outline-none transition-all duration-300 placeholder:text-off-white/50 hover:border-deep-blue/80"
+                    className="w-full bg-white border-2 border-[#0052FF]/60 focus:border-[#8CE63A] focus:bg-white focus:shadow-lg focus:shadow-[#8CE63A]/20 rounded-lg px-5 py-4 text-[#111111] font-inter outline-none transition-all duration-300 placeholder:text-[#111111]/40 hover:border-[#0052FF]/80"
                     placeholder="John Doe"
                   />
                 </div>
@@ -192,7 +193,7 @@ export default function Contact() {
                     value={formState.email}
                     onChange={handleChange}
                     required
-                    className="w-full bg-black/40 border-2 border-deep-blue/60 focus:border-neon-green focus:bg-black/60 focus:shadow-lg focus:shadow-neon-green/20 rounded-lg px-5 py-4 text-off-white font-inter outline-none transition-all duration-300 placeholder:text-off-white/50 hover:border-deep-blue/80"
+                    className="w-full bg-white border-2 border-[#0052FF]/60 focus:border-[#8CE63A] focus:bg-white focus:shadow-lg focus:shadow-[#8CE63A]/20 rounded-lg px-5 py-4 text-[#111111] font-inter outline-none transition-all duration-300 placeholder:text-[#111111]/40 hover:border-[#0052FF]/80"
                     placeholder="john@company.com"
                   />
                 </div>
@@ -208,7 +209,7 @@ export default function Contact() {
                     name="company"
                     value={formState.company}
                     onChange={handleChange}
-                    className="w-full bg-black/40 border-2 border-deep-blue/60 focus:border-neon-green focus:bg-black/60 focus:shadow-lg focus:shadow-neon-green/20 rounded-lg px-5 py-4 text-off-white font-inter outline-none transition-all duration-300 placeholder:text-off-white/50 hover:border-deep-blue/80"
+                    className="w-full bg-white border-2 border-[#0052FF]/60 focus:border-[#8CE63A] focus:bg-white focus:shadow-lg focus:shadow-[#8CE63A]/20 rounded-lg px-5 py-4 text-[#111111] font-inter outline-none transition-all duration-300 placeholder:text-[#111111]/40 hover:border-[#0052FF]/80"
                     placeholder="Your Company"
                   />
                 </div>
@@ -225,18 +226,18 @@ export default function Contact() {
                     onChange={handleChange}
                     required
                     rows={5}
-                    className="w-full bg-black/40 border-2 border-deep-blue/60 focus:border-neon-green focus:bg-black/60 focus:shadow-lg focus:shadow-neon-green/20 rounded-lg px-5 py-4 text-off-white font-inter outline-none transition-all duration-300 resize-none placeholder:text-off-white/50 hover:border-deep-blue/80"
+                    className="w-full bg-white border-2 border-[#0052FF]/60 focus:border-[#8CE63A] focus:bg-white focus:shadow-lg focus:shadow-[#8CE63A]/20 rounded-lg px-5 py-4 text-[#111111] font-inter outline-none transition-all duration-300 resize-none placeholder:text-[#111111]/40 hover:border-[#0052FF]/80"
                     placeholder="Tell us about your goals, target audience, and how we can help..."
                   />
                 </div>
 
                 {/* Submit Button */}
-                <motion.button
-                  type="submit"
-                  disabled={isSubmitting}
-                  className="w-full bg-gradient-to-r from-ember-orange to-ember-orange/90 text-white px-8 py-5 rounded-lg font-montserrat font-bold text-lg shadow-lg shadow-ember-orange/30 hover:shadow-ember-orange/50 hover:from-ember-orange/90 hover:to-ember-orange transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
-                  whileHover={{ scale: isSubmitting ? 1 : 1.02 }}
-                  whileTap={{ scale: 0.98 }}
+                <Button
+                  variant="primary"
+                  size="large"
+                  fullWidth
+                  onClick={handleSubmit}
+                  className="disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {isSubmitting ? (
                     <span className="flex items-center justify-center gap-2">
@@ -247,7 +248,7 @@ export default function Contact() {
                       Sending...
                     </span>
                   ) : 'Send Message'}
-                </motion.button>
+                </Button>
 
                 <p className="text-xs text-off-white/50 font-inter text-center pt-2">
                   🔒 Your information is secure and will never be shared

@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import Button from './ui/Button';
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -29,7 +30,7 @@ export default function Navigation() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-graphite/95 backdrop-blur-md shadow-lg' : 'bg-transparent'
+        isScrolled ? 'bg-graphite/95 backdrop-blur-md shadow-lg' : 'bg-graphite-dark/80 backdrop-blur-sm shadow-md'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -60,48 +61,49 @@ export default function Navigation() {
                 {item.name}
               </motion.a>
             ))}
-            <motion.a
+            <Button
               href="/#contact"
-              className="bg-gradient-to-r from-ember-orange to-ember-orange/80 text-white px-6 py-3 rounded-lg font-montserrat font-bold shadow-lg shadow-ember-orange/30 hover:shadow-xl hover:shadow-ember-orange/50 transition-all duration-300"
-              whileHover={{ scale: 1.05, y: -2 }}
-              whileTap={{ scale: 0.95 }}
+              variant="primary"
+              size="medium"
             >
               Get Started
-            </motion.a>
+            </Button>
           </div>
 
           {/* Mobile Menu Button */}
-          <button
-            className="md:hidden text-off-white focus:outline-none"
+          <motion.button
+            className="md:hidden focus:outline-none p-2 relative z-50"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
           >
             <motion.div
               animate={isMobileMenuOpen ? 'open' : 'closed'}
-              className="w-6 h-5 flex flex-col justify-between"
+              className="w-7 h-6 flex flex-col justify-between"
             >
               <motion.span
                 variants={{
                   closed: { rotate: 0, y: 0 },
-                  open: { rotate: 45, y: 8 },
+                  open: { rotate: 45, y: 9 },
                 }}
-                className="w-full h-0.5 bg-neon-green block transition-all"
+                className="w-full h-1 bg-[#8CE63A] rounded block transition-all"
               />
               <motion.span
                 variants={{
                   closed: { opacity: 1 },
                   open: { opacity: 0 },
                 }}
-                className="w-full h-0.5 bg-neon-green block transition-all"
+                className="w-full h-1 bg-[#8CE63A] rounded block transition-all"
               />
               <motion.span
                 variants={{
                   closed: { rotate: 0, y: 0 },
-                  open: { rotate: -45, y: -8 },
+                  open: { rotate: -45, y: -9 },
                 }}
-                className="w-full h-0.5 bg-neon-green block transition-all"
+                className="w-full h-1 bg-[#8CE63A] rounded block transition-all"
               />
             </motion.div>
-          </button>
+          </motion.button>
         </div>
       </div>
 
@@ -112,9 +114,13 @@ export default function Navigation() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-graphite border-t border-deep-blue/20"
+            className="md:hidden relative overflow-hidden bg-gradient-to-br from-[#0052FF]/10 via-graphite-dark to-graphite-dark border-t-2 border-neon-green/30"
           >
-            <div className="px-4 py-6 space-y-4">
+            {/* Accent Background Elements - matching footer */}
+            <div className="absolute top-0 right-0 w-48 h-48 bg-gradient-to-bl from-[#8CE63A]/5 to-transparent rounded-full blur-3xl" />
+            <div className="absolute bottom-0 left-0 w-48 h-48 bg-gradient-to-tr from-[#0052FF]/5 to-transparent rounded-full blur-3xl" />
+
+            <div className="relative z-10 px-4 py-6 space-y-4">
               {navItems.map((item, index) => (
                 <motion.a
                   key={item.name}
@@ -128,16 +134,21 @@ export default function Navigation() {
                   {item.name}
                 </motion.a>
               ))}
-              <motion.a
-                href="/#contact"
+              <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: navItems.length * 0.1 }}
-                className="block bg-gradient-to-r from-ember-orange to-ember-orange/80 text-white px-6 py-3 rounded-lg font-montserrat font-bold text-center shadow-lg shadow-ember-orange/30"
-                onClick={() => setIsMobileMenuOpen(false)}
               >
-                Get Started
-              </motion.a>
+                <Button
+                  href="/#contact"
+                  variant="primary"
+                  size="medium"
+                  fullWidth
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Get Started
+                </Button>
+              </motion.div>
             </div>
           </motion.div>
         )}
