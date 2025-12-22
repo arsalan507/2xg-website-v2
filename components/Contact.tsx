@@ -232,12 +232,10 @@ export default function Contact() {
                 </div>
 
                 {/* Submit Button */}
-                <Button
-                  variant="primary"
-                  size="large"
-                  fullWidth
-                  onClick={handleSubmit}
-                  className="disabled:opacity-50 disabled:cursor-not-allowed"
+                <button
+                  type="submit"
+                  disabled={isSubmitting}
+                  className="w-full font-montserrat font-black uppercase tracking-wider transition-all duration-300 text-center px-10 py-5 text-lg sm:text-xl md:text-2xl bg-[#8CE63A] text-[#111111] hover:brightness-110 shadow-2xl shadow-[#8CE63A]/60 hover:shadow-[#8CE63A]/80 border-4 border-[#8CE63A] rounded-xl disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {isSubmitting ? (
                     <span className="flex items-center justify-center gap-2">
@@ -248,7 +246,7 @@ export default function Contact() {
                       Sending...
                     </span>
                   ) : 'Send Message'}
-                </Button>
+                </button>
 
                 <p className="text-xs text-off-white/50 font-inter text-center pt-2">
                   🔒 Your information is secure and will never be shared
