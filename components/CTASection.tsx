@@ -72,37 +72,61 @@ export default function CTASection() {
           transition={{ duration: 0.8 }}
           className="text-center"
         >
-          {/* Overline */}
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={isInView ? { opacity: 1 } : {}}
-            transition={{ delay: 0.2 }}
-            className="text-neon-green font-montserrat font-semibold text-sm sm:text-base mb-6 tracking-wider uppercase"
+          {/* Scarcity Badge */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={isInView ? { opacity: 1, scale: 1 } : {}}
+            transition={{ delay: 0.1 }}
+            className="inline-flex items-center gap-3 bg-gradient-to-r from-[#FF6A1A]/20 to-[#FF6A1A]/10 border-2 border-[#FF6A1A]/50 rounded-full px-6 py-3 mb-6"
           >
-            Ready to Scale?
-          </motion.p>
+            <motion.span
+              className="text-2xl"
+              animate={{
+                scale: [1, 1.2, 1],
+              }}
+              transition={{
+                duration: 1.5,
+                repeat: Infinity,
+                ease: 'easeInOut',
+              }}
+            >
+              ⚡
+            </motion.span>
+            <span className="text-[#FF6A1A] font-montserrat font-bold text-sm sm:text-base tracking-wide">
+              JANUARY STRATEGY CALLS: 2 SLOTS REMAINING
+            </span>
+          </motion.div>
 
-          {/* Main Headline */}
+          {/* Main Headline with Curiosity Gap */}
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ delay: 0.4 }}
+            transition={{ delay: 0.3 }}
             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-montserrat font-black mb-6 leading-tight text-off-white"
           >
-            Click Here to{' '}
-            <span className="gradient-text">Double Your Growth</span>
+            The Counter-Intuitive Strategy That{' '}
+            <span className="gradient-text">Tripled BCH's Leads</span>
           </motion.h2>
 
-          {/* Subheadline */}
+          {/* Subheadline with Urgency */}
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ delay: 0.6 }}
-            className="text-lg sm:text-xl md:text-2xl text-off-white/90 font-inter max-w-4xl mx-auto mb-10 leading-relaxed"
+            transition={{ delay: 0.5 }}
+            className="text-lg sm:text-xl md:text-2xl text-off-white/90 font-inter max-w-4xl mx-auto mb-8 leading-relaxed"
           >
-            Join India's leading brands who've turned content into predictable revenue.
-            <br />
-            Let's build your content system today.
+            While your competitors post daily (and see zero ROI), our clients post 3x per week—
+            <span className="text-[#8CE63A] font-semibold"> and dominate their market.</span>
+          </motion.p>
+
+          {/* Urgency Message */}
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={isInView ? { opacity: 1 } : {}}
+            transition={{ delay: 0.7 }}
+            className="text-[#0052FF] font-inter font-semibold text-base sm:text-lg mb-10"
+          >
+            Q1 planning starts soon. Book before Dec 31 to start fresh in January.
           </motion.p>
 
           {/* CTA Button with pulse animation */}
