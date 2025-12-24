@@ -67,7 +67,8 @@ function ServiceCard({ icon, title, description, features, index }: ServiceCardP
           </ul>
 
           {/* Learn More Link */}
-          <motion.button
+          <motion.a
+            href="/services"
             className="mt-6 text-ember-orange font-montserrat font-semibold flex items-center gap-2 group/btn self-start"
             whileHover={{ x: 5 }}
           >
@@ -79,7 +80,7 @@ function ServiceCard({ icon, title, description, features, index }: ServiceCardP
             >
               →
             </motion.span>
-          </motion.button>
+          </motion.a>
         </div>
 
         {/* Decorative Element */}

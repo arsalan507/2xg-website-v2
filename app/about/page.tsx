@@ -242,8 +242,8 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* Core Team Section */}
-        <section ref={teamRef} className="relative py-20 sm:py-32 bg-graphite overflow-hidden">
+        {/* Core Team Section - Hidden for now */}
+        {/* <section ref={teamRef} className="relative py-20 sm:py-32 bg-graphite overflow-hidden">
           <div className="absolute inset-0 opacity-5" style={{
             backgroundImage: `radial-gradient(circle at 2px 2px, #8CE63A 1px, transparent 0)`,
             backgroundSize: '40px 40px',
@@ -299,7 +299,7 @@ export default function AboutPage() {
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Our Values Section */}
         <section ref={valuesRef} className="relative py-20 sm:py-32 bg-graphite-dark overflow-hidden">

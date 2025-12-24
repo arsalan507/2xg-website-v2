@@ -150,7 +150,7 @@ export default function CTASection() {
               }}
             />
 
-            <Button href="/#contact" variant="primary" size="large">
+            <Button href="/contact" variant="primary" size="large">
               Get Started Now
             </Button>
           </motion.div>

@@ -214,12 +214,12 @@ export default function MetricsShowcase() {
             Ready to achieve similar results for your brand?
           </p>
           <motion.a
-            href="#contact"
+            href="/contact"
             className="inline-block bg-gradient-to-r from-ember-orange to-ember-orange/80 text-white px-8 py-4 rounded-xl font-montserrat font-bold text-lg shadow-xl shadow-ember-orange/40 hover:shadow-2xl hover:shadow-ember-orange/60 transition-all duration-300"
             whileHover={{ scale: 1.05, y: -2 }}
             whileTap={{ scale: 0.95 }}
           >
-            Start Your Success Story
+            Let's Talk Growth
           </motion.a>
         </motion.div>
       </div>

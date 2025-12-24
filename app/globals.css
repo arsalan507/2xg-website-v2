@@ -64,3 +64,32 @@ html {
 .glow-effect-blue {
   box-shadow: 0 0 20px rgba(0, 82, 255, 0.3);
 }
+
+/* Masked Text Animation */
+.masked-text-animated {
+  font-weight: 900;
+  color: transparent;
+  background-image: linear-gradient(
+    90deg,
+    #0052FF 0%,
+    #8CE63A 25%,
+    #FF6A1A 50%,
+    #8CE63A 75%,
+    #0052FF 100%
+  );
+  background-size: 200%;
+  background-position: 0 50%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate-background 5s infinite alternate linear;
+}
+
+@keyframes animate-background {
+  0% {
+    background-position: 0 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}

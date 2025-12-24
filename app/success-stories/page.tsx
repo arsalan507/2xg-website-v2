@@ -1,6 +1,7 @@
 import SuccessStoriesHero from '@/components/success/SuccessStoriesHero';
 import MetricsShowcase from '@/components/success/MetricsShowcase';
 import PortfolioGallery from '@/components/success/PortfolioGallery';
+import YouTubeSuccessSlider from '@/components/YouTubeSuccessSlider';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 
@@ -16,6 +17,7 @@ export default function SuccessStoriesPage() {
       <Navigation />
       <SuccessStoriesHero />
       <MetricsShowcase />
+      <YouTubeSuccessSlider />
       <PortfolioGallery />
       <Footer />
     </main>

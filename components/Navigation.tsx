@@ -19,11 +19,11 @@ export default function Navigation() {
 
   const navItems = [
     { name: 'Home', href: '/' },
-    { name: 'Case Studies', href: '/#case-studies' },
-    { name: 'Success Stories', href: '/success-stories' },
+    { name: 'Services', href: '/services' },
+    { name: 'See The Proof', href: '/success-stories' },
     { name: 'About Us', href: '/about' },
     { name: 'Careers', href: '/careers' },
-    { name: 'Contact', href: '/#contact' },
+    { name: 'Contact', href: '/contact' },
   ];
 
   return (
@@ -63,7 +63,7 @@ export default function Navigation() {
               </motion.a>
             ))}
             <Button
-              href="/#contact"
+              href="/contact"
               variant="primary"
               size="medium"
             >
@@ -141,7 +141,7 @@ export default function Navigation() {
                 transition={{ delay: navItems.length * 0.1 }}
               >
                 <Button
-                  href="/#contact"
+                  href="/contact"
                   variant="primary"
                   size="medium"
                   fullWidth

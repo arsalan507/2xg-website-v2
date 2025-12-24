@@ -85,7 +85,7 @@ export default function HeroSection() {
           >
             Content That
             <br />
-            <span className="gradient-text">Doubles Growth</span>
+            <span className="masked-text-animated">Doubles Growth</span>
           </motion.h1>
 
           {/* Subheadline */}
@@ -107,18 +107,18 @@ export default function HeroSection() {
             className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-16"
           >
             <Button
-              href="#case-studies"
+              href="/success-stories"
               variant="primary"
               size="large"
             >
-              See Our Case Studies
+              See The Proof
             </Button>
             <Button
-              href="#contact"
+              href="/contact"
               variant="primary"
               size="large"
             >
-              Get Started Now!
+              Let's Talk Growth
             </Button>
           </motion.div>
 

@@ -147,12 +147,12 @@ export default function PortfolioGallery() {
             This represents a small sample of 100+ viral reels created for BCH
           </p>
           <motion.a
-            href="/#contact"
+            href="/contact"
             className="inline-block bg-graphite border-2 border-neon-green text-neon-green px-8 py-4 rounded-xl font-montserrat font-bold text-lg hover:bg-neon-green hover:text-graphite-dark hover:shadow-xl hover:shadow-neon-green/40 transition-all duration-300"
             whileHover={{ scale: 1.05, y: -2 }}
             whileTap={{ scale: 0.95 }}
           >
-            Request Full Portfolio
+            Let's Talk Growth
           </motion.a>
         </motion.div>
       </div>
