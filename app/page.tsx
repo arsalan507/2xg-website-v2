@@ -5,6 +5,7 @@ import StatsSlider from '@/components/StatsSlider'; // NEW GRIFLAN-STYLE INTERAC
 // import CaseStudies from '@/components/CaseStudies'; // OLD VERSION - Hidden for review
 // import CaseStudiesEnhanced from '@/components/CaseStudiesEnhanced'; // Moved to Success Stories page only
 import YouTubeSuccessSlider from '@/components/YouTubeSuccessSlider'; // NEW YOUTUBE SUCCESS STORY SLIDER
+import WhyChooseUs from '@/components/WhyChooseUs'; // WHY CHOOSE 2XG - PITCH DECK STYLE
 import Services from '@/components/Services';
 import CTASection from '@/components/CTASection';
 // import Contact from '@/components/Contact'; // Moved to dedicated /contact page
@@ -16,6 +17,7 @@ export default function Home() {
       <Navigation />
       <HeroSection />
       <StatsSlider />
+      <WhyChooseUs />
       <YouTubeSuccessSlider />
       <Services />
       <CTASection />

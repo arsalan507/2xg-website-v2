@@ -72,26 +72,28 @@ export default function CTASection() {
           transition={{ duration: 0.8 }}
           className="text-center"
         >
-          {/* Scarcity Badge */}
+          {/* Scarcity Badge with Icon */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={isInView ? { opacity: 1, scale: 1 } : {}}
             transition={{ delay: 0.1 }}
             className="inline-flex items-center gap-3 bg-gradient-to-r from-[#FF6A1A]/20 to-[#FF6A1A]/10 border-2 border-[#FF6A1A]/50 rounded-full px-6 py-3 mb-6"
           >
-            <motion.span
-              className="text-2xl"
+            <motion.div
               animate={{
                 scale: [1, 1.2, 1],
+                rotate: [0, 5, -5, 0],
               }}
               transition={{
-                duration: 1.5,
+                duration: 2,
                 repeat: Infinity,
                 ease: 'easeInOut',
               }}
             >
-              ⚡
-            </motion.span>
+              <svg className="w-6 h-6 text-[#FF6A1A]" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd"/>
+              </svg>
+            </motion.div>
             <span className="text-[#FF6A1A] font-montserrat font-bold text-sm sm:text-base tracking-wide">
               JANUARY STRATEGY CALLS: 2 SLOTS REMAINING
             </span>
