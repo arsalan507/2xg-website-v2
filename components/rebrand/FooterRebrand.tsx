@@ -58,8 +58,8 @@ export default function FooterRebrand() {
             © {currentYear} 2XG. All rights reserved.
           </p>
           <div className="flex gap-6">
-            <a href="#" className="text-[#5E5E5E] hover:text-[#2F7D63] transition-colors text-sm">Privacy</a>
-            <a href="#" className="text-[#5E5E5E] hover:text-[#2F7D63] transition-colors text-sm">Terms</a>
+            <a href="/privacy" className="text-[#5E5E5E] hover:text-[#2F7D63] transition-colors text-sm">Privacy</a>
+            <a href="/terms" className="text-[#5E5E5E] hover:text-[#2F7D63] transition-colors text-sm">Terms</a>
           </div>
         </div>
       </div>

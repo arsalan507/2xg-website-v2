@@ -179,7 +179,7 @@ export default function PricingRebrand() {
         </motion.div>
 
         {/* Pricing Cards */}
-        <div className="grid lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-16">
           {pricingPlans.map((plan, index) => (
             <motion.div
               key={plan.name}
@@ -190,8 +190,8 @@ export default function PricingRebrand() {
             >
               {/* Popular Badge */}
               {plan.popular && (
-                <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-10">
-                  <span className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-orange-500 to-red-500 text-white text-sm font-bold uppercase tracking-wider rounded-full shadow-lg">
+                <div className="absolute -top-3 sm:-top-4 left-1/2 -translate-x-1/2 z-10">
+                  <span className="inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 sm:py-2 bg-gradient-to-r from-orange-500 to-red-500 text-white text-xs sm:text-sm font-bold uppercase tracking-wider rounded-full shadow-lg whitespace-nowrap">
                     <span>🔥</span>
                     Most Popular
                   </span>
@@ -199,9 +199,9 @@ export default function PricingRebrand() {
               )}
 
               <div
-                className={`relative h-full bg-[#F6F7F5] rounded-2xl p-8 transition-all duration-300 ${
+                className={`relative h-full bg-[#F6F7F5] rounded-2xl p-6 sm:p-8 transition-all duration-300 ${
                   plan.popular
-                    ? 'border-4 border-[#FF6A1A] shadow-2xl scale-105'
+                    ? 'border-4 border-[#FF6A1A] shadow-2xl lg:scale-105'
                     : 'border-2 border-[#D6D8D4] hover:border-[#2F7D63] shadow-lg hover:shadow-xl'
                 }`}
               >
@@ -209,18 +209,18 @@ export default function PricingRebrand() {
                 <div className="mb-6">
                   <div className="flex items-center gap-2 mb-2">
                     <div
-                      className="w-3 h-3 rounded-full"
+                      className="w-3 h-3 rounded-full flex-shrink-0"
                       style={{ backgroundColor: plan.color }}
                     />
-                    <h3 className="text-sm font-bold uppercase tracking-wider text-[#5E5E5E]">
+                    <h3 className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#5E5E5E]">
                       {plan.name} Plan
                     </h3>
                   </div>
-                  <div className="flex items-baseline gap-2 mb-3">
-                    <span className="text-5xl font-black text-[#1F1F1F]">₹{plan.price}</span>
-                    <span className="text-lg text-[#5E5E5E] font-medium">{plan.period}</span>
+                  <div className="flex items-baseline gap-1.5 sm:gap-2 mb-3 flex-wrap">
+                    <span className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#1F1F1F]">₹{plan.price}</span>
+                    <span className="text-base sm:text-lg text-[#5E5E5E] font-medium">{plan.period}</span>
                   </div>
-                  <p className="text-[#5E5E5E] text-sm leading-relaxed">{plan.tagline}</p>
+                  <p className="text-[#5E5E5E] text-xs sm:text-sm leading-relaxed">{plan.tagline}</p>
                 </div>
 
                 {/* Platforms */}
@@ -314,7 +314,7 @@ export default function PricingRebrand() {
                 {/* CTA Button */}
                 <a
                   href="/contact"
-                  className={`block w-full px-6 py-4 text-center font-bold text-lg rounded-xl transition-all duration-200 shadow-md hover:shadow-xl hover:-translate-y-1 ${
+                  className={`block w-full px-4 sm:px-6 py-3 sm:py-4 text-center font-bold text-base sm:text-lg rounded-xl transition-all duration-200 shadow-md hover:shadow-xl hover:-translate-y-1 ${
                     plan.popular
                       ? 'bg-gradient-to-r from-orange-500 to-red-500 text-white'
                       : 'bg-[#2F7D63] hover:bg-[#256B54] text-white'
@@ -332,43 +332,44 @@ export default function PricingRebrand() {
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="text-center bg-gradient-to-br from-[#1F1F1F] to-[#2F7D63] rounded-2xl p-12 text-white"
+          className="text-center bg-gradient-to-br from-[#1F1F1F] to-[#2F7D63] rounded-2xl p-6 sm:p-8 lg:p-12 text-white"
         >
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4">
             Not Sure Which Plan Fits Your Business?
           </h2>
-          <p className="text-lg text-white/80 mb-8 max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-white/80 mb-6 sm:mb-8 max-w-2xl mx-auto">
             Book a free 15-minute strategy call and we'll help you choose the perfect plan for your goals.
           </p>
           <a
             href="/contact"
-            className="inline-flex items-center justify-center px-8 py-4 bg-white text-[#1F1F1F] hover:bg-[#F6F7F5] font-bold text-lg rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl hover:-translate-y-1"
+            className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 bg-white text-[#1F1F1F] hover:bg-[#F6F7F5] font-bold text-base sm:text-lg rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl hover:-translate-y-1"
           >
-            Book Free Strategy Call
+            <span className="hidden sm:inline">Book Free Strategy Call</span>
+            <span className="sm:hidden">Book Strategy Call</span>
             <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
           </a>
 
           {/* Trust Signals */}
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-6 text-white/70 text-sm">
+          <div className="mt-6 sm:mt-8 flex flex-wrap items-center justify-center gap-4 sm:gap-6 text-white/70 text-xs sm:text-sm">
             <div className="flex items-center gap-2">
-              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+              <svg className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
-              <span>No long-term contracts</span>
+              <span className="whitespace-nowrap">No long-term contracts</span>
             </div>
             <div className="flex items-center gap-2">
-              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+              <svg className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
-              <span>Cancel anytime</span>
+              <span className="whitespace-nowrap">Cancel anytime</span>
             </div>
             <div className="flex items-center gap-2">
-              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+              <svg className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
-              <span>100% transparent reporting</span>
+              <span className="whitespace-nowrap">100% transparent reporting</span>
             </div>
           </div>
         </motion.div>

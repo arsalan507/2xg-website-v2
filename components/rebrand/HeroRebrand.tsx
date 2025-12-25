@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 export default function HeroRebrand() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-[#F6F7F5] pt-20 overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center bg-[#F6F7F5] pt-8 overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 opacity-[0.03]">
         <img
@@ -48,7 +48,7 @@ export default function HeroRebrand() {
         >
           starts at just
           <br />
-          <span className="text-[#2F7D63]">₹1499/day</span>
+          <span className="text-[#2F7D63]">₹1499/- day</span>
         </motion.h1>
 
         {/* Subheadline */}
@@ -56,9 +56,13 @@ export default function HeroRebrand() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-lg sm:text-xl text-[#5E5E5E] max-w-3xl mx-auto mb-10 leading-relaxed"
+          className="text-lg sm:text-xl text-[#5E5E5E] max-w-3xl mx-auto mb-10 leading-relaxed flex items-center justify-center flex-wrap gap-2"
         >
-          Crores of views 👀 More customers 🎯 More sales 🚀
+          <span>Crores of views 👀</span>
+          <span className="text-[#2F7D63] text-2xl">→</span>
+          <span>More customers 🎯</span>
+          <span className="text-[#2F7D63] text-2xl">→</span>
+          <span>More sales 🚀</span>
         </motion.p>
 
         {/* CTA Button */}
@@ -78,7 +82,7 @@ export default function HeroRebrand() {
             }}
             className="inline-flex items-center justify-center px-10 py-4 bg-[#2F7D63] hover:bg-[#256B54] text-white font-bold text-lg rounded-lg transition-all duration-200 shadow-md hover:shadow-lg cursor-pointer"
           >
-            Turn Views Into Sales ✨
+            🔥 TEST US FOR FREE 🔥
           </button>
         </motion.div>
 
@@ -100,7 +104,7 @@ export default function HeroRebrand() {
           </div>
           <div className="w-px h-12 bg-[#D6D8D4]" />
           <div>
-            <div className="text-3xl font-bold text-[#2F7D63] mb-1">3–5x</div>
+            <div className="text-3xl font-bold text-[#2F7D63] mb-1">20x</div>
             <div className="text-sm text-[#5E5E5E] font-medium">Revenue Growth</div>
           </div>
         </motion.div>

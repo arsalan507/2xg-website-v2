@@ -2,6 +2,7 @@
 
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
+import Link from 'next/link';
 
 export default function VerticalsRebrand() {
   const ref = useRef(null);
@@ -81,11 +82,12 @@ export default function VerticalsRebrand() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="group relative"
             >
-              <motion.div
-                whileHover={{ y: -8, scale: 1.02 }}
-                transition={{ duration: 0.3 }}
-                className="relative bg-[#F6F7F5] border-2 border-[#D6D8D4] hover:border-[#2F7D63] rounded-2xl p-8 h-full cursor-pointer overflow-hidden"
-              >
+              <Link href="/services" className="block h-full">
+                <motion.div
+                  whileHover={{ y: -8, scale: 1.02 }}
+                  transition={{ duration: 0.3 }}
+                  className="relative bg-[#F6F7F5] border-2 border-[#D6D8D4] hover:border-[#2F7D63] rounded-2xl p-8 h-full cursor-pointer overflow-hidden"
+                >
                 {/* Background Image */}
                 <div className="absolute inset-0 opacity-[0.35] group-hover:opacity-[0.6] transition-opacity duration-500">
                   <img
@@ -135,6 +137,7 @@ export default function VerticalsRebrand() {
                 {/* Decorative corner element */}
                 <div className="absolute top-0 right-0 w-20 h-20 bg-[#2F7D63]/5 rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </motion.div>
+              </Link>
             </motion.div>
           ))}
         </div>
