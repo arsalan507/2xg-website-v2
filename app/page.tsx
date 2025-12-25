@@ -1,27 +1,18 @@
-import Navigation from '@/components/Navigation';
-import HeroSection from '@/components/HeroSection';
-// import StatsBar from '@/components/StatsBar'; // OLD VERSION - Replaced with interactive slider
-import StatsSlider from '@/components/StatsSlider'; // NEW GRIFLAN-STYLE INTERACTIVE VERSION
-// import CaseStudies from '@/components/CaseStudies'; // OLD VERSION - Hidden for review
-// import CaseStudiesEnhanced from '@/components/CaseStudiesEnhanced'; // Moved to Success Stories page only
-import YouTubeSuccessSlider from '@/components/YouTubeSuccessSlider'; // NEW YOUTUBE SUCCESS STORY SLIDER
-import WhyChooseUs from '@/components/WhyChooseUs'; // WHY CHOOSE 2XG - PITCH DECK STYLE
-import Services from '@/components/Services';
-import CTASection from '@/components/CTASection';
-// import Contact from '@/components/Contact'; // Moved to dedicated /contact page
-import Footer from '@/components/Footer';
+import NavigationRebrand from '@/components/rebrand/NavigationRebrand';
+import HeroRebrand from '@/components/rebrand/HeroRebrand';
+import FeaturesRebrand from '@/components/rebrand/FeaturesRebrand';
+import FooterRebrand from '@/components/rebrand/FooterRebrand';
+
+// ORIGINAL VERSION BACKED UP AT: page-original.tsx
+// This is the new Cloud Dancer rebrand with calm, premium aesthetic
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
-      <Navigation />
-      <HeroSection />
-      <StatsSlider />
-      <WhyChooseUs />
-      <YouTubeSuccessSlider />
-      <Services />
-      <CTASection />
-      <Footer />
+    <main className="min-h-screen bg-[#F6F7F5]">
+      <NavigationRebrand />
+      <HeroRebrand />
+      <FeaturesRebrand />
+      <FooterRebrand />
     </main>
   );
 }
