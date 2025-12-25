@@ -1,9 +1,9 @@
-import SuccessStoriesHero from '@/components/success/SuccessStoriesHero';
-import MetricsShowcase from '@/components/success/MetricsShowcase';
+import SuccessStoriesHeroRebrand from '@/components/rebrand/success/SuccessStoriesHeroRebrand';
+import MetricsShowcaseRebrand from '@/components/rebrand/success/MetricsShowcaseRebrand';
 import PortfolioGallery from '@/components/success/PortfolioGallery';
-import YouTubeSuccessSlider from '@/components/YouTubeSuccessSlider';
-import Navigation from '@/components/Navigation';
-import Footer from '@/components/Footer';
+import YouTubeSuccessSliderRebrand from '@/components/rebrand/YouTubeSuccessSliderRebrand';
+import NavigationRebrand from '@/components/rebrand/NavigationRebrand';
+import FooterRebrand from '@/components/rebrand/FooterRebrand';
 
 export const metadata = {
   title: "Success Stories - 2XG | Proven Results for BCH",
@@ -13,13 +13,13 @@ export const metadata = {
 
 export default function SuccessStoriesPage() {
   return (
-    <main className="min-h-screen bg-graphite-dark">
-      <Navigation />
-      <SuccessStoriesHero />
-      <MetricsShowcase />
-      <YouTubeSuccessSlider />
+    <main className="min-h-screen bg-[#F6F7F5]">
+      <NavigationRebrand />
+      <SuccessStoriesHeroRebrand />
+      <MetricsShowcaseRebrand />
+      <YouTubeSuccessSliderRebrand />
       <PortfolioGallery />
-      <Footer />
+      <FooterRebrand />
     </main>
   );
 }

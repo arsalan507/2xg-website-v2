@@ -5,9 +5,21 @@ import { motion } from 'framer-motion';
 export default function HeroRebrand() {
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-[#F6F7F5] pt-20 overflow-hidden">
-      {/* Subtle background pattern */}
+      {/* Background Image */}
+      <div className="absolute inset-0 opacity-[0.03]">
+        <img
+          src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1920&q=80"
+          alt="Background"
+          className="w-full h-full object-cover"
+        />
+      </div>
+
+      {/* Gradient Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-br from-[#F6F7F5]/95 via-[#F6F7F5]/90 to-[#F6F7F5]/95" />
+
+      {/* Subtle pattern on top */}
       <div
-        className="absolute inset-0 opacity-[0.02]"
+        className="absolute inset-0 opacity-[0.03]"
         style={{
           backgroundImage: `radial-gradient(circle at 2px 2px, #2F7D63 1px, transparent 0)`,
           backgroundSize: '48px 48px',
@@ -23,7 +35,7 @@ export default function HeroRebrand() {
           className="mb-6"
         >
           <span className="inline-flex items-center px-4 py-2 bg-[#ECEDEB] border border-[#D6D8D4] rounded-full text-[#5E5E5E] text-sm font-medium tracking-wide">
-            India's Content-First Growth Agency
+            📈 views = sales 💰
           </span>
         </motion.div>
 
@@ -34,9 +46,9 @@ export default function HeroRebrand() {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="text-5xl sm:text-6xl lg:text-7xl font-bold text-[#1F1F1F] mb-6 leading-[1.1] tracking-tight"
         >
-          Content That
+          starts at just
           <br />
-          <span className="text-[#2F7D63]">Doubles Growth</span>
+          <span className="text-[#2F7D63]">₹1499/day</span>
         </motion.h1>
 
         {/* Subheadline */}
@@ -46,29 +58,28 @@ export default function HeroRebrand() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-lg sm:text-xl text-[#5E5E5E] max-w-3xl mx-auto mb-10 leading-relaxed"
         >
-          From 25M views to predictable sales. We build content systems for{' '}
-          <span className="text-[#1F1F1F] font-semibold">mobility & retail</span> brands.
+          Crores of views 👀 More customers 🎯 More sales 🚀
         </motion.p>
 
-        {/* CTA Buttons */}
+        {/* CTA Button */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16"
+          className="flex flex-col items-center justify-center mb-16"
         >
-          <a
-            href="/success-stories"
-            className="inline-flex items-center justify-center px-8 py-4 bg-[#2F7D63] hover:bg-[#256B54] text-white font-semibold text-base rounded-lg transition-all duration-200 shadow-sm hover:shadow-md min-w-[200px]"
+          <p className="text-[#5E5E5E] text-sm font-medium uppercase tracking-wider mb-3">
+            👇 click here now 👇
+          </p>
+          <button
+            onClick={() => {
+              const formSection = document.querySelector('#contact-form');
+              formSection?.scrollIntoView({ behavior: 'smooth' });
+            }}
+            className="inline-flex items-center justify-center px-10 py-4 bg-[#2F7D63] hover:bg-[#256B54] text-white font-bold text-lg rounded-lg transition-all duration-200 shadow-md hover:shadow-lg cursor-pointer"
           >
-            See The Proof
-          </a>
-          <a
-            href="/contact"
-            className="inline-flex items-center justify-center px-8 py-4 bg-transparent border-2 border-[#D6D8D4] hover:border-[#2F7D63] text-[#1F1F1F] hover:text-[#2F7D63] font-semibold text-base rounded-lg transition-all duration-200 min-w-[200px]"
-          >
-            Let's Talk Growth
-          </a>
+            Turn Views Into Sales ✨
+          </button>
         </motion.div>
 
         {/* Trust Indicators */}
@@ -79,17 +90,17 @@ export default function HeroRebrand() {
           className="flex flex-wrap items-center justify-center gap-8 sm:gap-12 text-center"
         >
           <div>
-            <div className="text-3xl font-bold text-[#2F7D63] mb-1">25M+</div>
+            <div className="text-3xl font-bold text-[#2F7D63] mb-1">2.5 Cr+</div>
             <div className="text-sm text-[#5E5E5E] font-medium">Monthly Views</div>
           </div>
           <div className="w-px h-12 bg-[#D6D8D4]" />
           <div>
-            <div className="text-3xl font-bold text-[#2F7D63] mb-1">2M+</div>
+            <div className="text-3xl font-bold text-[#2F7D63] mb-1">20L+</div>
             <div className="text-sm text-[#5E5E5E] font-medium">Followers Built</div>
           </div>
           <div className="w-px h-12 bg-[#D6D8D4]" />
           <div>
-            <div className="text-3xl font-bold text-[#2F7D63] mb-1">3-5x</div>
+            <div className="text-3xl font-bold text-[#2F7D63] mb-1">3–5x</div>
             <div className="text-sm text-[#5E5E5E] font-medium">Revenue Growth</div>
           </div>
         </motion.div>

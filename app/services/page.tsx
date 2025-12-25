@@ -1,19 +1,23 @@
-import Navigation from '@/components/Navigation';
-import Footer from '@/components/Footer';
-import ServicesDetailed from '@/components/ServicesDetailed';
+import NavigationRebrand from '@/components/rebrand/NavigationRebrand';
+import ServicesHero from '@/components/rebrand/ServicesHero';
+import AllVerticals from '@/components/rebrand/AllVerticals';
+import ServicesCTA from '@/components/rebrand/ServicesCTA';
+import FooterRebrand from '@/components/rebrand/FooterRebrand';
 
 export const metadata = {
-  title: "Our Services - 2XG | Content Marketing That Converts",
-  description: "We build repeatable content engines that turn objections into education, attention into WhatsApp leads, and test rides into sales.",
-  keywords: ["content marketing services", "social media marketing", "performance marketing", "funnel optimization", "2XG services"],
+  title: "Our Services - 2XG | Complete Growth Solutions",
+  description: "From content to customers, we handle everything. Content marketing, performance marketing, influencer marketing, and business development.",
+  keywords: ["content marketing services", "performance marketing", "influencer marketing", "business development", "2XG services"],
 };
 
 export default function ServicesPage() {
   return (
-    <main className="min-h-screen bg-graphite-dark">
-      <Navigation />
-      <ServicesDetailed />
-      <Footer />
+    <main className="min-h-screen bg-[#F6F7F5]">
+      <NavigationRebrand />
+      <ServicesHero />
+      <AllVerticals />
+      <ServicesCTA />
+      <FooterRebrand />
     </main>
   );
 }

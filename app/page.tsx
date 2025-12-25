@@ -1,6 +1,8 @@
 import NavigationRebrand from '@/components/rebrand/NavigationRebrand';
 import HeroRebrand from '@/components/rebrand/HeroRebrand';
-import FeaturesRebrand from '@/components/rebrand/FeaturesRebrand';
+import YouTubeVideoRebrand from '@/components/rebrand/YouTubeVideoRebrand';
+import VerticalsRebrand from '@/components/rebrand/VerticalsRebrand';
+import FinalCTARebrand from '@/components/rebrand/FinalCTARebrand';
 import FooterRebrand from '@/components/rebrand/FooterRebrand';
 
 // ORIGINAL VERSION BACKED UP AT: page-original.tsx
@@ -11,7 +13,9 @@ export default function Home() {
     <main className="min-h-screen bg-[#F6F7F5]">
       <NavigationRebrand />
       <HeroRebrand />
-      <FeaturesRebrand />
+      <YouTubeVideoRebrand />
+      <VerticalsRebrand />
+      <FinalCTARebrand />
       <FooterRebrand />
     </main>
   );
