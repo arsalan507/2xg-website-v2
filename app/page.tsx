@@ -1,6 +1,7 @@
 import NavigationRebrand from '@/components/rebrand/NavigationRebrand';
 import HeroRebrand from '@/components/rebrand/HeroRebrand';
 import YouTubeVideoRebrand from '@/components/rebrand/YouTubeVideoRebrand';
+import BusinessSelectorRebrand from '@/components/rebrand/BusinessSelectorRebrand';
 import VerticalsRebrand from '@/components/rebrand/VerticalsRebrand';
 import FinalCTARebrand from '@/components/rebrand/FinalCTARebrand';
 import FooterRebrand from '@/components/rebrand/FooterRebrand';
@@ -14,6 +15,7 @@ export default function Home() {
       <NavigationRebrand />
       <HeroRebrand />
       <YouTubeVideoRebrand />
+      <BusinessSelectorRebrand />
       <VerticalsRebrand />
       <FinalCTARebrand />
       <FooterRebrand />

@@ -1,13 +1,23 @@
 'use client';
 
 import { motion, useInView } from 'framer-motion';
-import { useRef, useState } from 'react';
+import { useRef, useState, useEffect } from 'react';
 
 export default function FinalCTARebrand() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-100px' });
   const [formData, setFormData] = useState({ name: '', phone: '' });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [slotsLeft, setSlotsLeft] = useState(10);
+
+  // Simulate slot countdown (decrease randomly every few seconds)
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setSlotsLeft((prev) => (prev > 3 ? prev - 1 : prev));
+    }, 45000); // Decrease every 45 seconds
+
+    return () => clearInterval(interval);
+  }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -48,9 +58,48 @@ export default function FinalCTARebrand() {
           <h2 className="text-4xl sm:text-5xl font-bold text-[#1F1F1F] mb-6 tracking-tight">
             Turn Your Views Into Sales Today 💰
           </h2>
-          <p className="text-lg text-[#5E5E5E] max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg text-[#5E5E5E] max-w-2xl mx-auto leading-relaxed mb-6">
             Leave your details 📝 and we'll reach out within 24 hours ⏰ with a custom growth strategy for your business 🎯
           </p>
+
+          {/* Urgency Banner */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={isInView ? { opacity: 1, scale: 1 } : {}}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            className="inline-flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-red-500 to-orange-500 rounded-full shadow-lg"
+          >
+            <motion.div
+              animate={{
+                scale: [1, 1.2, 1],
+                rotate: [0, 5, -5, 0]
+              }}
+              transition={{
+                duration: 2,
+                repeat: Infinity,
+                repeatType: "reverse"
+              }}
+              className="text-2xl"
+            >
+              ⏰
+            </motion.div>
+            <div className="text-white font-bold text-lg">
+              Only <span className="text-3xl font-black mx-1">{slotsLeft}</span> Slots Left for January 2025!
+            </div>
+            <motion.div
+              animate={{
+                scale: [1, 1.2, 1],
+              }}
+              transition={{
+                duration: 1,
+                repeat: Infinity,
+                repeatType: "reverse"
+              }}
+              className="text-2xl"
+            >
+              🔥
+            </motion.div>
+          </motion.div>
         </motion.div>
 
         {/* Form Card */}

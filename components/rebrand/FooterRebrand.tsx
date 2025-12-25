@@ -35,6 +35,7 @@ export default function FooterRebrand() {
             <h3 className="text-[#1F1F1F] font-semibold mb-4 text-sm uppercase tracking-wider">Company</h3>
             <ul className="space-y-3">
               <li><a href="/about" className="text-[#5E5E5E] hover:text-[#2F7D63] transition-colors text-sm">About Us</a></li>
+              <li><a href="/pricing" className="text-[#5E5E5E] hover:text-[#2F7D63] transition-colors text-sm">Pricing</a></li>
               <li><a href="/success-stories" className="text-[#5E5E5E] hover:text-[#2F7D63] transition-colors text-sm">Success Stories</a></li>
               <li><a href="/careers" className="text-[#5E5E5E] hover:text-[#2F7D63] transition-colors text-sm">Careers</a></li>
             </ul>

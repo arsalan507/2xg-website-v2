@@ -1,6 +1,6 @@
-import Navigation from '@/components/Navigation';
-import Footer from '@/components/Footer';
-import Contact from '@/components/Contact';
+import NavigationRebrand from '@/components/rebrand/NavigationRebrand';
+import FooterRebrand from '@/components/rebrand/FooterRebrand';
+import ContactRebrand from '@/components/rebrand/ContactRebrand';
 
 export const metadata = {
   title: "Contact Us - 2XG | Let's Talk Growth",
@@ -10,10 +10,10 @@ export const metadata = {
 
 export default function ContactPage() {
   return (
-    <main className="min-h-screen bg-graphite-dark">
-      <Navigation />
-      <Contact />
-      <Footer />
+    <main className="min-h-screen bg-[#F6F7F5]">
+      <NavigationRebrand />
+      <ContactRebrand />
+      <FooterRebrand />
     </main>
   );
 }

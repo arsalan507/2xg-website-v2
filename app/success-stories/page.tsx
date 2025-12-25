@@ -1,6 +1,6 @@
 import SuccessStoriesHeroRebrand from '@/components/rebrand/success/SuccessStoriesHeroRebrand';
 import MetricsShowcaseRebrand from '@/components/rebrand/success/MetricsShowcaseRebrand';
-import PortfolioGallery from '@/components/success/PortfolioGallery';
+import PortfolioGalleryRebrand from '@/components/rebrand/success/PortfolioGalleryRebrand';
 import YouTubeSuccessSliderRebrand from '@/components/rebrand/YouTubeSuccessSliderRebrand';
 import NavigationRebrand from '@/components/rebrand/NavigationRebrand';
 import FooterRebrand from '@/components/rebrand/FooterRebrand';
@@ -18,7 +18,7 @@ export default function SuccessStoriesPage() {
       <SuccessStoriesHeroRebrand />
       <MetricsShowcaseRebrand />
       <YouTubeSuccessSliderRebrand />
-      <PortfolioGallery />
+      <PortfolioGalleryRebrand />
       <FooterRebrand />
     </main>
   );

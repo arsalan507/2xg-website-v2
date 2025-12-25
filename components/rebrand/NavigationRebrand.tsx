@@ -19,7 +19,9 @@ export default function NavigationRebrand() {
   const navItems = [
     { name: 'Home', href: '/' },
     { name: 'Services', href: '/services' },
+    { name: 'Pricing', href: '/pricing' },
     { name: 'Success Stories', href: '/success-stories' },
+    { name: 'Careers', href: '/careers' },
     { name: 'About', href: '/about' },
     { name: 'Contact', href: '/contact' },
   ];
