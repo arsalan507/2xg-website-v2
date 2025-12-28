@@ -152,11 +152,12 @@ export default function AllVerticals() {
               transition={{ duration: 0.5, delay: index * 0.08 }}
               className="group relative"
             >
-              <motion.div
-                whileHover={{ y: -8, scale: 1.02 }}
-                transition={{ duration: 0.3 }}
-                className="relative bg-[#F6F7F5] border-2 border-[#D6D8D4] hover:border-[#6BBF59] rounded-2xl p-8 h-full cursor-pointer overflow-hidden"
-              >
+              <a href="/contact">
+                <motion.div
+                  whileHover={{ y: -8, scale: 1.02 }}
+                  transition={{ duration: 0.3 }}
+                  className="relative bg-[#F6F7F5] border-2 border-[#D6D8D4] hover:border-[#6BBF59] rounded-2xl p-8 h-full cursor-pointer overflow-hidden"
+                >
                 {/* Background Image */}
                 <div className="absolute inset-0 opacity-[0.35] group-hover:opacity-[0.6] transition-opacity duration-500">
                   <img
@@ -218,6 +219,7 @@ export default function AllVerticals() {
                 {/* Decorative corner element */}
                 <div className="absolute top-0 right-0 w-20 h-20 bg-[#6BBF59]/5 rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </motion.div>
+              </a>
             </motion.div>
           ))}
         </div>
