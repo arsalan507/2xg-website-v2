@@ -64,6 +64,11 @@ export default function Footer() {
                 </a>
               </li>
               <li className="text-off-white/70 font-inter text-sm">
+                <a href="https://wa.me/919916516507" target="_blank" rel="noopener noreferrer" className="hover:text-neon-green transition-colors">
+                  +91 99165 16507
+                </a>
+              </li>
+              <li className="text-off-white/70 font-inter text-sm">
                 <a href="https://2xg.in" className="hover:text-neon-green transition-colors">
                   2xg.in
                 </a>

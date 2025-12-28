@@ -52,6 +52,7 @@ export default function FooterRebrand() {
             <h3 className="text-[#1F1F1F] font-semibold mb-4 text-sm uppercase tracking-wider">Contact</h3>
             <ul className="space-y-3">
               <li><a href="mailto:contact@2xg.in" className="text-[#5E5E5E] hover:text-[#6BBF59] transition-colors text-sm">contact@2xg.in</a></li>
+              <li><a href="https://wa.me/919916516507" target="_blank" rel="noopener noreferrer" className="text-[#5E5E5E] hover:text-[#6BBF59] transition-colors text-sm">+91 99165 16507</a></li>
               <li><span className="text-[#5E5E5E] text-sm">Bengaluru, India</span></li>
               <li><a href="/contact" className="text-[#6BBF59] hover:text-[#5AA047] transition-colors text-sm font-medium">Get In Touch →</a></li>
             </ul>

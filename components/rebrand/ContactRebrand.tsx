@@ -387,7 +387,7 @@ export default function ContactRebrand() {
                   hello@2xg.in
                 </a>
                 <a
-                  href="https://wa.me/919876543210"
+                  href="https://wa.me/919916516507"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-[#6BBF59] hover:text-[#5AA047] font-medium transition-colors duration-200"
