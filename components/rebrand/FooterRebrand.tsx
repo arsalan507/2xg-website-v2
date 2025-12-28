@@ -1,5 +1,7 @@
 'use client';
 
+import Image from 'next/image';
+
 export default function FooterRebrand() {
   const currentYear = new Date().getFullYear();
 
@@ -9,11 +11,15 @@ export default function FooterRebrand() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
           <div className="md:col-span-1">
-            <div className="flex items-center space-x-2 mb-4">
-              <span className="text-2xl font-bold tracking-tight">
-                <span className="text-[#6BBF59]">2X</span>
-                <span className="text-[#1F1F1F]">G</span>
-              </span>
+            <div className="flex items-center mb-4">
+              <Image
+                src="/2xg-logo.gif"
+                alt="2XG Logo"
+                width={50}
+                height={50}
+                className="object-contain"
+                unoptimized
+              />
             </div>
             <p className="text-[#5E5E5E] text-sm leading-relaxed">
               India's content-first growth agency for mobility & retail brands.

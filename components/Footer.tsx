@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -16,13 +17,17 @@ export default function Footer() {
           {/* Brand Column */}
           <div>
             <motion.div
-              className="flex items-center space-x-2 mb-4"
+              className="flex items-center mb-4"
               whileHover={{ scale: 1.05 }}
             >
-              <span className="text-3xl font-montserrat font-black">
-                <span className="text-neon-green">2X</span>
-                <span className="text-deep-blue">G</span>
-              </span>
+              <Image
+                src="/2xg-logo.gif"
+                alt="2XG Logo"
+                width={50}
+                height={50}
+                className="object-contain"
+                unoptimized
+              />
             </motion.div>
             <p className="text-off-white/70 font-inter text-sm mb-4">
               Content That Doubles Growth
