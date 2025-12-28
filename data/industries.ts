@@ -264,6 +264,7 @@ export const industriesData: Record<string, IndustryData> = {
         'Video walkthroughs convert 4x better than static images',
         'Local SEO and Google My Business drive 60% of enquiries',
       ],
+      sideImage: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80',
     },
     framework: {
       title: 'The 2X Growth Framework for Real Estate',
@@ -366,6 +367,7 @@ export const industriesData: Record<string, IndustryData> = {
         'Style matching and space planning content drives qualified enquiries',
         'Instagram + Pinterest dominate furniture discovery',
       ],
+      sideImage: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&q=80',
     },
     framework: {
       title: 'The 2X Growth Framework for Furniture',
@@ -570,7 +572,7 @@ export const industriesData: Record<string, IndustryData> = {
         'Trust in product quality and technique is critical for high-ticket services',
         'Instagram and Google My Business drive local discovery',
       ],
-      sideImage: 'https://images.unsplash.com/photo-1607860108855-64acf2078ed9?w=800&q=80',
+      sideImage: 'https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=800&q=80',
     },
     framework: {
       title: 'The 2X Growth Framework for Car Wash & Detailing',
@@ -661,6 +663,7 @@ export const industriesData: Record<string, IndustryData> = {
       subheadline: 'We help electronics retailers turn research-heavy buyers into customers through education and trust.',
       accentColor: '#00CED1',
       bgGradient: 'linear-gradient(135deg, #1F1F1F 0%, #1A2328 100%)',
+      bgImage: 'https://images.unsplash.com/photo-1498049794561-7780e7231661?w=1920&q=90',
     },
     insights: {
       title: 'We Understand This Business',
@@ -672,6 +675,7 @@ export const industriesData: Record<string, IndustryData> = {
         'YouTube and Instagram are the primary research channels',
         'Trade-in and upgrade programs drive repeat business',
       ],
+      sideImage: 'https://images.unsplash.com/photo-1550009158-9ebf69173e03?w=800&q=80',
     },
     framework: {
       title: 'The 2X Growth Framework for Electronics Stores',
@@ -762,6 +766,7 @@ export const industriesData: Record<string, IndustryData> = {
       subheadline: 'We help dry fruit retailers build trust in quality, freshness, and health benefits that command premium pricing.',
       accentColor: '#D2691E',
       bgGradient: 'linear-gradient(135deg, #1F1F1F 0%, #2A1F15 100%)',
+      bgImage: 'https://images.unsplash.com/photo-1607623488235-d4ba1b566b74?w=1920&q=90',
     },
     insights: {
       title: 'We Understand This Business',
@@ -773,6 +778,7 @@ export const industriesData: Record<string, IndustryData> = {
         'Packaging and presentation matter as much as the product',
         'WhatsApp ordering and personal service create customer loyalty',
       ],
+      sideImage: 'https://images.unsplash.com/photo-1602352593956-51a48f4b3f79?w=800&q=80',
     },
     framework: {
       title: 'The 2X Growth Framework for Dry Fruit Shops',
@@ -863,6 +869,7 @@ export const industriesData: Record<string, IndustryData> = {
       subheadline: 'We help pharmacies dominate local search and build lasting relationships with patients.',
       accentColor: '#228B22',
       bgGradient: 'linear-gradient(135deg, #1F1F1F 0%, #1A251F 100%)',
+      bgImage: 'https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=1920&q=90',
     },
     insights: {
       title: 'We Understand This Business',
@@ -874,6 +881,7 @@ export const industriesData: Record<string, IndustryData> = {
         'Home delivery and digital ordering are no longer optional',
         'Customer service and personal touch differentiate you from chains',
       ],
+      sideImage: 'https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=800&q=80',
     },
     framework: {
       title: 'The 2X Growth Framework for Pharmacies',
@@ -964,6 +972,7 @@ export const industriesData: Record<string, IndustryData> = {
       subheadline: 'We help mobile retailers win buyers through value demonstration and trust in the complete ownership experience.',
       accentColor: '#FF4500',
       bgGradient: 'linear-gradient(135deg, #1F1F1F 0%, #2A1510 100%)',
+      bgImage: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=1920&q=90',
     },
     insights: {
       title: 'We Understand This Business',
@@ -975,6 +984,7 @@ export const industriesData: Record<string, IndustryData> = {
         'Warranty, accessories, and service packages increase transaction value',
         'YouTube reviews and Instagram influence 80% of purchase decisions',
       ],
+      sideImage: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&q=80',
     },
     framework: {
       title: 'The 2X Growth Framework for Mobile Sales',
@@ -1065,6 +1075,7 @@ export const industriesData: Record<string, IndustryData> = {
       subheadline: 'We help automotive dealerships turn digital interest into test drives and confirmed bookings.',
       accentColor: '#DC143C',
       bgGradient: 'linear-gradient(135deg, #1F1F1F 0%, #2A1015 100%)',
+      bgImage: 'https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=1920&q=90',
     },
     insights: {
       title: 'We Understand This Business',
@@ -1076,6 +1087,7 @@ export const industriesData: Record<string, IndustryData> = {
         'YouTube and Instagram drive initial interest, Google drives intent',
         'Post-purchase service reputation influences 60% of buying decisions',
       ],
+      sideImage: 'https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=800&q=80',
     },
     framework: {
       title: 'The 2X Growth Framework for Car & Bike Sales',
@@ -1166,6 +1178,7 @@ export const industriesData: Record<string, IndustryData> = {
       subheadline: 'We help home service providers turn convenience into recurring bookings and customer loyalty.',
       accentColor: '#4B0082',
       bgGradient: 'linear-gradient(135deg, #1F1F1F 0%, #1F1025 100%)',
+      bgImage: 'https://images.unsplash.com/photo-1615906655593-ad0386982a0f?w=1920&q=90',
     },
     insights: {
       title: 'We Understand This Business',
@@ -1177,6 +1190,7 @@ export const industriesData: Record<string, IndustryData> = {
         'Google reviews and local visibility drive 70% of new bookings',
         'WhatsApp is the primary communication and booking channel',
       ],
+      sideImage: 'https://images.unsplash.com/photo-1487754180451-c456f719a1fc?w=800&q=80',
     },
     framework: {
       title: 'The 2X Growth Framework for Car & Bike Home Service',
@@ -1267,6 +1281,7 @@ export const industriesData: Record<string, IndustryData> = {
       subheadline: 'We help wedding decorators turn visual portfolios into confirmed bookings and flawless delivery.',
       accentColor: '#FFD700',
       bgGradient: 'linear-gradient(135deg, #1F1F1F 0%, #2A2510 100%)',
+      bgImage: 'https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=1920&q=90',
     },
     insights: {
       title: 'We Understand This Business',
@@ -1278,6 +1293,7 @@ export const industriesData: Record<string, IndustryData> = {
         'Real wedding documentation outperforms staged shoots by 5x',
         'Vendor network and venue relationships are hidden competitive advantages',
       ],
+      sideImage: 'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=800&q=80',
     },
     framework: {
       title: 'The 2X Growth Framework for Wedding Decor',
