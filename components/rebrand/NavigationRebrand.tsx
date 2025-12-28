@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 export default function NavigationRebrand() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -39,12 +40,16 @@ export default function NavigationRebrand() {
           {/* Logo */}
           <a
             href="/"
-            className="flex items-center space-x-2 group"
+            className="flex items-center group"
           >
-            <span className="text-2xl font-bold tracking-tight">
-              <span className="text-[#2F7D63]">2X</span>
-              <span className="text-[#1F1F1F]">G</span>
-            </span>
+            <Image
+              src="/2xg-logo.gif"
+              alt="2XG Logo"
+              width={60}
+              height={60}
+              className="object-contain"
+              unoptimized
+            />
           </a>
 
           {/* Desktop Navigation */}
@@ -53,14 +58,14 @@ export default function NavigationRebrand() {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-[#1F1F1F] hover:text-[#2F7D63] transition-colors duration-200 font-medium text-[15px]"
+                className="text-[#1F1F1F] hover:text-[#6BBF59] transition-colors duration-200 font-medium text-[15px]"
               >
                 {item.name}
               </a>
             ))}
             <a
               href="/contact"
-              className="inline-flex items-center justify-center px-6 py-2.5 bg-[#2F7D63] hover:bg-[#256B54] text-white font-medium text-[15px] rounded-lg transition-all duration-200"
+              className="inline-flex items-center justify-center px-6 py-2.5 bg-[#6BBF59] hover:bg-[#5AA047] text-white font-medium text-[15px] rounded-lg transition-all duration-200"
             >
               Get Started
             </a>
@@ -102,7 +107,7 @@ export default function NavigationRebrand() {
               <div className="px-4 pt-2">
                 <a
                   href="/contact"
-                  className="block text-center px-6 py-3 bg-[#2F7D63] hover:bg-[#256B54] text-white font-medium rounded-lg transition-all"
+                  className="block text-center px-6 py-3 bg-[#6BBF59] hover:bg-[#5AA047] text-white font-medium rounded-lg transition-all"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Get Started

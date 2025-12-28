@@ -131,7 +131,7 @@ export default function AllVerticals() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="inline-block text-[#2F7D63] font-semibold text-sm uppercase tracking-wider mb-4">
+          <span className="inline-block text-[#6BBF59] font-semibold text-sm uppercase tracking-wider mb-4">
             🎯 Complete Service Suite
           </span>
           <h2 className="text-4xl sm:text-5xl font-bold text-[#1F1F1F] mb-6 tracking-tight">
@@ -155,7 +155,7 @@ export default function AllVerticals() {
               <motion.div
                 whileHover={{ y: -8, scale: 1.02 }}
                 transition={{ duration: 0.3 }}
-                className="relative bg-[#F6F7F5] border-2 border-[#D6D8D4] hover:border-[#2F7D63] rounded-2xl p-8 h-full cursor-pointer overflow-hidden"
+                className="relative bg-[#F6F7F5] border-2 border-[#D6D8D4] hover:border-[#6BBF59] rounded-2xl p-8 h-full cursor-pointer overflow-hidden"
               >
                 {/* Background Image */}
                 <div className="absolute inset-0 opacity-[0.35] group-hover:opacity-[0.6] transition-opacity duration-500">
@@ -168,7 +168,7 @@ export default function AllVerticals() {
 
                 {/* Gradient overlays */}
                 <div className="absolute inset-0 bg-gradient-to-br from-[#F6F7F5]/50 via-[#F6F7F5]/55 to-[#F6F7F5]/45" />
-                <div className="absolute inset-0 bg-gradient-to-br from-[#2F7D63]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute inset-0 bg-gradient-to-br from-[#6BBF59]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
                 {/* Content */}
                 <div className="relative z-10">
@@ -176,13 +176,13 @@ export default function AllVerticals() {
                   <motion.div
                     whileHover={{ rotate: [0, -10, 10, -10, 0], scale: 1.1 }}
                     transition={{ duration: 0.5 }}
-                    className="inline-flex items-center justify-center w-16 h-16 bg-[#2F7D63]/10 text-[#2F7D63] rounded-xl mb-6 group-hover:bg-[#2F7D63] group-hover:text-white transition-all duration-300"
+                    className="inline-flex items-center justify-center w-16 h-16 bg-[#6BBF59]/10 text-[#6BBF59] rounded-xl mb-6 group-hover:bg-[#6BBF59] group-hover:text-white transition-all duration-300"
                   >
                     {vertical.icon}
                   </motion.div>
 
                   {/* Title */}
-                  <h3 className="text-2xl font-bold text-[#1F1F1F] mb-3 group-hover:text-[#2F7D63] transition-colors duration-300">
+                  <h3 className="text-2xl font-bold text-[#1F1F1F] mb-3 group-hover:text-[#6BBF59] transition-colors duration-300">
                     {vertical.title}
                   </h3>
 
@@ -195,7 +195,7 @@ export default function AllVerticals() {
                   <ul className="space-y-2 mb-6">
                     {vertical.details.map((detail, idx) => (
                       <li key={idx} className="flex items-center gap-2 text-sm text-[#5E5E5E]">
-                        <svg className="w-4 h-4 text-[#2F7D63] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <svg className="w-4 h-4 text-[#6BBF59] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                           <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
                         </svg>
                         {detail}
@@ -205,7 +205,7 @@ export default function AllVerticals() {
 
                   {/* Learn More indicator */}
                   <motion.div
-                    className="flex items-center gap-2 text-[#2F7D63] font-semibold text-sm"
+                    className="flex items-center gap-2 text-[#6BBF59] font-semibold text-sm"
                     whileHover={{ x: 5 }}
                   >
                     <span>Get Started</span>
@@ -216,7 +216,7 @@ export default function AllVerticals() {
                 </div>
 
                 {/* Decorative corner element */}
-                <div className="absolute top-0 right-0 w-20 h-20 bg-[#2F7D63]/5 rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute top-0 right-0 w-20 h-20 bg-[#6BBF59]/5 rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </motion.div>
             </motion.div>
           ))}

@@ -122,7 +122,7 @@ export default function WhyChooseUs() {
       <div
         className="absolute inset-0 opacity-5"
         style={{
-          backgroundImage: `radial-gradient(circle at 2px 2px, #8CE63A 1px, transparent 0)`,
+          backgroundImage: `radial-gradient(circle at 2px 2px, #6BBF59 1px, transparent 0)`,
           backgroundSize: '40px 40px',
         }}
       />

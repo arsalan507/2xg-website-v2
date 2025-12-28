@@ -21,7 +21,7 @@ export default function HeroRebrand() {
       <div
         className="absolute inset-0 opacity-[0.03]"
         style={{
-          backgroundImage: `radial-gradient(circle at 2px 2px, #2F7D63 1px, transparent 0)`,
+          backgroundImage: `radial-gradient(circle at 2px 2px, #6BBF59 1px, transparent 0)`,
           backgroundSize: '48px 48px',
         }}
       />
@@ -48,7 +48,7 @@ export default function HeroRebrand() {
         >
           starts at just
           <br />
-          <span className="text-[#2F7D63]">₹1499/- day</span>
+          <span className="text-[#6BBF59]">₹1499/- day</span>
         </motion.h1>
 
         {/* Subheadline */}
@@ -59,9 +59,9 @@ export default function HeroRebrand() {
           className="text-lg sm:text-xl text-[#5E5E5E] max-w-3xl mx-auto mb-10 leading-relaxed flex items-center justify-center flex-wrap gap-2"
         >
           <span>Crores of views 👀</span>
-          <span className="text-[#2F7D63] text-2xl">→</span>
+          <span className="text-[#6BBF59] text-2xl">→</span>
           <span>More customers 🎯</span>
-          <span className="text-[#2F7D63] text-2xl">→</span>
+          <span className="text-[#6BBF59] text-2xl">→</span>
           <span>More sales 🚀</span>
         </motion.p>
 
@@ -80,7 +80,7 @@ export default function HeroRebrand() {
               const formSection = document.querySelector('#contact-form');
               formSection?.scrollIntoView({ behavior: 'smooth' });
             }}
-            className="inline-flex items-center justify-center px-10 py-4 bg-[#2F7D63] hover:bg-[#256B54] text-white font-bold text-lg rounded-lg transition-all duration-200 shadow-md hover:shadow-lg cursor-pointer"
+            className="inline-flex items-center justify-center px-10 py-4 bg-[#6BBF59] hover:bg-[#5AA047] text-white font-bold text-lg rounded-lg transition-all duration-200 shadow-md hover:shadow-lg cursor-pointer"
           >
             🔥 TEST US FOR FREE 🔥
           </button>
@@ -94,17 +94,17 @@ export default function HeroRebrand() {
           className="flex flex-wrap items-center justify-center gap-8 sm:gap-12 text-center"
         >
           <div>
-            <div className="text-3xl font-bold text-[#2F7D63] mb-1">2.5 Cr+</div>
+            <div className="text-3xl font-bold text-[#6BBF59] mb-1">2.5 Cr+</div>
             <div className="text-sm text-[#5E5E5E] font-medium">Monthly Views</div>
           </div>
           <div className="w-px h-12 bg-[#D6D8D4]" />
           <div>
-            <div className="text-3xl font-bold text-[#2F7D63] mb-1">20L+</div>
+            <div className="text-3xl font-bold text-[#6BBF59] mb-1">20L+</div>
             <div className="text-sm text-[#5E5E5E] font-medium">Followers Built</div>
           </div>
           <div className="w-px h-12 bg-[#D6D8D4]" />
           <div>
-            <div className="text-3xl font-bold text-[#2F7D63] mb-1">20x</div>
+            <div className="text-3xl font-bold text-[#6BBF59] mb-1">20x</div>
             <div className="text-sm text-[#5E5E5E] font-medium">Revenue Growth</div>
           </div>
         </motion.div>
@@ -122,7 +122,7 @@ export default function HeroRebrand() {
           transition={{ duration: 2, repeat: Infinity }}
           className="w-6 h-10 border-2 border-[#D6D8D4] rounded-full flex justify-center pt-2"
         >
-          <div className="w-1 h-2 bg-[#2F7D63] rounded-full" />
+          <div className="w-1 h-2 bg-[#6BBF59] rounded-full" />
         </motion.div>
       </motion.div>
     </section>

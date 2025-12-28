@@ -30,7 +30,7 @@ export default function PortfolioGalleryRebrand() {
   return (
     <section ref={ref} className="relative py-20 sm:py-32 bg-[#ECEDEB] overflow-hidden">
       {/* Background Decorations */}
-      <div className="absolute top-0 left-0 w-96 h-96 bg-[#2F7D63]/5 rounded-full blur-3xl" />
+      <div className="absolute top-0 left-0 w-96 h-96 bg-[#6BBF59]/5 rounded-full blur-3xl" />
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#FF6A1A]/5 rounded-full blur-3xl" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
@@ -41,11 +41,11 @@ export default function PortfolioGalleryRebrand() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <span className="inline-block px-4 py-2 bg-[#2F7D63]/10 text-[#2F7D63] rounded-full text-sm font-semibold uppercase tracking-wider mb-4">
+          <span className="inline-block px-4 py-2 bg-[#6BBF59]/10 text-[#6BBF59] rounded-full text-sm font-semibold uppercase tracking-wider mb-4">
             Content Portfolio
           </span>
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#1F1F1F] mb-6">
-            Success in <span className="text-[#2F7D63]">Action</span>
+            Success in <span className="text-[#6BBF59]">Action</span>
           </h2>
           <p className="text-lg sm:text-xl text-[#5E5E5E] max-w-3xl mx-auto leading-relaxed">
             Real Instagram Reel insights showing proven viral performance
@@ -69,8 +69,8 @@ export default function PortfolioGalleryRebrand() {
               onClick={() => setFilter(filterOption.id as any)}
               className={`px-6 py-3 rounded-xl font-bold text-sm transition-all duration-300 ${
                 filter === filterOption.id
-                  ? 'bg-[#2F7D63] text-white shadow-lg'
-                  : 'bg-white border-2 border-[#D6D8D4] text-[#1F1F1F] hover:border-[#2F7D63]'
+                  ? 'bg-[#6BBF59] text-white shadow-lg'
+                  : 'bg-white border-2 border-[#D6D8D4] text-[#1F1F1F] hover:border-[#6BBF59]'
               }`}
             >
               {filterOption.label}
@@ -92,7 +92,7 @@ export default function PortfolioGalleryRebrand() {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.9 }}
                 transition={{ duration: 0.4, delay: index * 0.05 }}
-                className="group relative bg-white rounded-2xl overflow-hidden cursor-pointer border-2 border-[#D6D8D4] hover:border-[#2F7D63] transition-all duration-500 shadow-md hover:shadow-xl"
+                className="group relative bg-white rounded-2xl overflow-hidden cursor-pointer border-2 border-[#D6D8D4] hover:border-[#6BBF59] transition-all duration-500 shadow-md hover:shadow-xl"
                 onClick={() => setSelectedImage(item.src)}
               >
                 {/* Image Container */}
@@ -113,7 +113,7 @@ export default function PortfolioGalleryRebrand() {
                       {item.title}
                     </h3>
                     <div className="flex items-center gap-2">
-                      <span className="text-2xl font-black text-[#8CE63A]">
+                      <span className="text-2xl font-black text-[#6BBF59]">
                         {item.views}
                       </span>
                       <span className="text-sm text-white/80">
@@ -124,7 +124,7 @@ export default function PortfolioGalleryRebrand() {
 
                   {/* View Count Badge */}
                   <div className="absolute top-4 right-4 bg-black/60 backdrop-blur-sm px-3 py-1.5 rounded-full">
-                    <span className="text-sm font-bold text-[#8CE63A]">
+                    <span className="text-sm font-bold text-[#6BBF59]">
                       {item.views}
                     </span>
                   </div>
@@ -146,7 +146,7 @@ export default function PortfolioGalleryRebrand() {
           </p>
           <a
             href="/contact"
-            className="inline-block bg-[#2F7D63] hover:bg-[#256B54] text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1"
+            className="inline-block bg-[#6BBF59] hover:bg-[#5AA047] text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1"
           >
             Let's Create Your Success Story →
           </a>
@@ -179,7 +179,7 @@ export default function PortfolioGalleryRebrand() {
               />
               <button
                 onClick={() => setSelectedImage(null)}
-                className="absolute -top-12 right-0 text-white text-4xl hover:text-[#8CE63A] transition-colors"
+                className="absolute -top-12 right-0 text-white text-4xl hover:text-[#6BBF59] transition-colors"
               >
                 ✕
               </button>

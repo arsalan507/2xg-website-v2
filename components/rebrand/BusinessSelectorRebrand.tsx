@@ -119,7 +119,7 @@ export default function BusinessSelectorRebrand() {
             <select
               value={selectedBusiness}
               onChange={(e) => handleBusinessSelect(e.target.value)}
-              className="w-full px-6 py-4 text-lg bg-[#F6F7F5] border-2 border-[#D6D8D4] hover:border-[#2F7D63] focus:border-[#2F7D63] rounded-xl text-[#1F1F1F] font-medium outline-none transition-all duration-200 cursor-pointer appearance-none"
+              className="w-full px-6 py-4 text-lg bg-[#F6F7F5] border-2 border-[#D6D8D4] hover:border-[#6BBF59] focus:border-[#6BBF59] rounded-xl text-[#1F1F1F] font-medium outline-none transition-all duration-200 cursor-pointer appearance-none"
             >
               <option value="">Select your business type...</option>
               {businesses.map((business) => (
@@ -131,7 +131,7 @@ export default function BusinessSelectorRebrand() {
 
             {/* Custom dropdown arrow */}
             <div className="absolute right-6 top-1/2 -translate-y-1/2 pointer-events-none">
-              <svg className="w-5 h-5 text-[#2F7D63]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-5 h-5 text-[#6BBF59]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
               </svg>
             </div>
@@ -145,7 +145,7 @@ export default function BusinessSelectorRebrand() {
               transition={{ duration: 0.4 }}
               className="mt-6"
             >
-              <div className="bg-[#2F7D63]/5 border-l-4 border-[#2F7D63] rounded-lg p-6">
+              <div className="bg-[#6BBF59]/5 border-l-4 border-[#6BBF59] rounded-lg p-6">
                 <p className="text-[#1F1F1F] text-base leading-relaxed font-medium italic">
                   "{selectedBusinessData.insight}"
                 </p>
@@ -160,7 +160,7 @@ export default function BusinessSelectorRebrand() {
               >
                 <a
                   href={`/industries/${selectedBusiness}`}
-                  className="inline-flex items-center justify-center px-8 py-4 bg-[#2F7D63] text-white hover:bg-[#1F5D4A] font-semibold text-lg rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl hover:-translate-y-1"
+                  className="inline-flex items-center justify-center px-8 py-4 bg-[#6BBF59] text-white hover:bg-[#1F5D4A] font-semibold text-lg rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl hover:-translate-y-1"
                 >
                   See How We Scale This Business
                   <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">

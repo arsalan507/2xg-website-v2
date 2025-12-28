@@ -11,85 +11,105 @@ interface IndustryInsightsProps {
   };
 }
 
+const iconsList = ['💡', '🎯', '🚀', '⚡', '✨', '🔥', '📊', '💪', '🌟', '🎨'];
+
 export default function IndustryInsights({ data }: IndustryInsightsProps) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 
   return (
-    <section ref={ref} className="relative py-20 sm:py-28 bg-white">
+    <section ref={ref} className="relative py-16 sm:py-24 bg-gradient-to-b from-white to-[#F6F7F5]">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-12"
         >
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#1F1F1F] mb-4">
+          <span className="inline-block text-[#6BBF59] font-semibold text-sm uppercase tracking-wider mb-3">
+            💎 Why We're Different
+          </span>
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#1F1F1F] mb-3">
             {data.title}
           </h2>
-          <div className="w-20 h-1 bg-[#2F7D63] mx-auto rounded-full" />
+          <p className="text-[#5E5E5E] text-base sm:text-lg max-w-2xl mx-auto">
+            Real insights from working with businesses like yours 🎯
+          </p>
         </motion.div>
 
-        {/* Insights with Optional Side Image */}
-        <div className={`grid ${data.sideImage ? 'lg:grid-cols-[1fr_400px]' : ''} gap-12 items-center`}>
-          {/* Insights Grid */}
-          <div className={`grid ${data.sideImage ? 'md:grid-cols-1' : 'md:grid-cols-2'} gap-6`}>
-            {data.items.map((insight, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, x: -20 }}
-                animate={isInView ? { opacity: 1, x: 0 } : {}}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="group"
-              >
-                <div className="flex gap-4 p-6 bg-[#F6F7F5] border-l-4 border-[#2F7D63] rounded-lg hover:bg-white hover:shadow-md transition-all duration-200">
-                  {/* Insight Text */}
-                  <p className="text-[#1F1F1F] text-lg leading-relaxed font-semibold">
-                    {insight}
-                  </p>
-                </div>
-              </motion.div>
-            ))}
-          </div>
+        {/* Featured Image - Mobile Visible */}
+        {data.sideImage && (
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={isInView ? { opacity: 1, scale: 1 } : {}}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="mb-8 sm:mb-12"
+          >
+            <div className="relative aspect-video sm:aspect-[21/9] rounded-2xl overflow-hidden shadow-xl">
+              <img
+                src={data.sideImage}
+                alt="Industry insights"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+            </div>
+          </motion.div>
+        )}
 
-          {/* Side Image (if provided) */}
-          {data.sideImage && (
+        {/* Insights Grid - More Visual */}
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+          {data.items.map((insight, index) => (
             <motion.div
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={isInView ? { opacity: 1, scale: 1 } : {}}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              className="hidden lg:block"
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              className="group"
             >
-              <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl">
-                <img
-                  src={data.sideImage}
-                  alt="Industry visual"
-                  className="w-full h-full object-cover"
-                />
-              </div>
+              <motion.div
+                whileHover={{ y: -5, scale: 1.02 }}
+                className="relative h-full p-5 sm:p-6 bg-white rounded-2xl border-2 border-[#D6D8D4] hover:border-[#6BBF59] transition-all duration-300 shadow-sm hover:shadow-lg"
+              >
+                {/* Icon */}
+                <div className="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-[#6BBF59]/10 to-[#6BBF59]/5 rounded-xl mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <span className="text-2xl sm:text-3xl">{iconsList[index % iconsList.length]}</span>
+                </div>
+
+                {/* Insight Text - Shortened for mobile */}
+                <p className="text-[#1F1F1F] text-sm sm:text-base leading-relaxed font-medium">
+                  {insight}
+                </p>
+
+                {/* Decorative element */}
+                <div className="absolute top-0 right-0 w-16 h-16 bg-[#6BBF59]/5 rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              </motion.div>
             </motion.div>
-          )}
+          ))}
         </div>
 
-        {/* Bottom Note */}
+        {/* Bottom CTA - More Engaging */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 0.6, duration: 0.6 }}
-          className="mt-12 text-center"
+          className="mt-12 sm:mt-16 text-center"
         >
-          <p className="text-[#5E5E5E] text-sm italic mb-8">
-            From experience, not guesswork ✨
-          </p>
-
-          {/* CTA */}
-          <a
-            href="/contact"
-            className="inline-flex items-center justify-center px-8 py-4 bg-[#2F7D63] hover:bg-[#256B54] text-white font-semibold text-lg rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl hover:-translate-y-1"
-          >
-            Want This for Your Business? Let's Talk →
-          </a>
+          <div className="inline-flex flex-col items-center gap-4 p-6 sm:p-8 bg-gradient-to-br from-[#6BBF59]/5 to-transparent rounded-2xl border-2 border-dashed border-[#6BBF59]/30">
+            <p className="text-[#1F1F1F] text-lg sm:text-xl font-bold">
+              Ready to grow like this? 🚀
+            </p>
+            <p className="text-[#5E5E5E] text-sm sm:text-base max-w-md">
+              From experience, not guesswork ✨
+            </p>
+            <a
+              href="/contact"
+              className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 bg-[#6BBF59] hover:bg-[#5AA047] text-white font-semibold text-base sm:text-lg rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl hover:-translate-y-1 gap-2"
+            >
+              <span>Let's Build Your Plan</span>
+              <span className="text-xl">→</span>
+            </a>
+          </div>
         </motion.div>
       </div>
     </section>

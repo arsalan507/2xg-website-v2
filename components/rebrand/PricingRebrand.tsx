@@ -10,7 +10,7 @@ const pricingPlans = [
     period: '/month',
     tagline: 'Best for: Market testing, messaging validation, and early lead flow',
     popular: false,
-    color: '#2F7D63',
+    color: '#6BBF59',
     platforms: ['Instagram Reels'],
     sections: [
       {
@@ -98,7 +98,7 @@ const pricingPlans = [
     period: '/month',
     tagline: 'Best for: Category leadership, retailer dominance, and long-term moat',
     popular: false,
-    color: '#8CE63A',
+    color: '#6BBF59',
     platforms: ['Instagram Reels', 'YouTube Shorts', 'YouTube Long-form'],
     sections: [
       {
@@ -156,7 +156,7 @@ export default function PricingRebrand() {
   return (
     <section ref={ref} className="relative py-20 sm:py-32 bg-white overflow-hidden">
       {/* Background Decorations */}
-      <div className="absolute top-0 left-0 w-96 h-96 bg-[#2F7D63]/5 rounded-full blur-3xl" />
+      <div className="absolute top-0 left-0 w-96 h-96 bg-[#6BBF59]/5 rounded-full blur-3xl" />
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#FF6A1A]/5 rounded-full blur-3xl" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
@@ -167,7 +167,7 @@ export default function PricingRebrand() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="inline-block px-4 py-2 bg-[#2F7D63]/10 text-[#2F7D63] rounded-full text-sm font-semibold uppercase tracking-wider mb-4">
+          <span className="inline-block px-4 py-2 bg-[#6BBF59]/10 text-[#6BBF59] rounded-full text-sm font-semibold uppercase tracking-wider mb-4">
             Simple, Transparent Pricing
           </span>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#1F1F1F] mb-6 leading-tight">
@@ -202,7 +202,7 @@ export default function PricingRebrand() {
                 className={`relative h-full bg-[#F6F7F5] rounded-2xl p-6 sm:p-8 transition-all duration-300 ${
                   plan.popular
                     ? 'border-4 border-[#FF6A1A] shadow-2xl lg:scale-105'
-                    : 'border-2 border-[#D6D8D4] hover:border-[#2F7D63] shadow-lg hover:shadow-xl'
+                    : 'border-2 border-[#D6D8D4] hover:border-[#6BBF59] shadow-lg hover:shadow-xl'
                 }`}
               >
                 {/* Plan Header */}
@@ -262,7 +262,7 @@ export default function PricingRebrand() {
                             className="flex-shrink-0"
                           >
                             <svg
-                              className="w-5 h-5 text-[#2F7D63]"
+                              className="w-5 h-5 text-[#6BBF59]"
                               fill="none"
                               stroke="currentColor"
                               viewBox="0 0 24 24"
@@ -291,7 +291,7 @@ export default function PricingRebrand() {
                             {section.features.map((feature, fIdx) => (
                               <li key={fIdx} className="flex items-start gap-2">
                                 <svg
-                                  className="w-5 h-5 text-[#2F7D63] flex-shrink-0 mt-0.5"
+                                  className="w-5 h-5 text-[#6BBF59] flex-shrink-0 mt-0.5"
                                   fill="currentColor"
                                   viewBox="0 0 20 20"
                                 >
@@ -317,7 +317,7 @@ export default function PricingRebrand() {
                   className={`block w-full px-4 sm:px-6 py-3 sm:py-4 text-center font-bold text-base sm:text-lg rounded-xl transition-all duration-200 shadow-md hover:shadow-xl hover:-translate-y-1 ${
                     plan.popular
                       ? 'bg-gradient-to-r from-orange-500 to-red-500 text-white'
-                      : 'bg-[#2F7D63] hover:bg-[#256B54] text-white'
+                      : 'bg-[#6BBF59] hover:bg-[#5AA047] text-white'
                   }`}
                 >
                   Get Started →
@@ -332,7 +332,7 @@ export default function PricingRebrand() {
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="text-center bg-gradient-to-br from-[#1F1F1F] to-[#2F7D63] rounded-2xl p-6 sm:p-8 lg:p-12 text-white"
+          className="text-center bg-gradient-to-br from-[#1F1F1F] to-[#6BBF59] rounded-2xl p-6 sm:p-8 lg:p-12 text-white"
         >
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4">
             Not Sure Which Plan Fits Your Business?
@@ -405,7 +405,7 @@ export default function PricingRebrand() {
             ].map((faq, index) => (
               <div
                 key={index}
-                className="bg-[#F6F7F5] border border-[#D6D8D4] rounded-xl p-6 hover:border-[#2F7D63] transition-all duration-200"
+                className="bg-[#F6F7F5] border border-[#D6D8D4] rounded-xl p-6 hover:border-[#6BBF59] transition-all duration-200"
               >
                 <h3 className="text-lg font-bold text-[#1F1F1F] mb-3">{faq.q}</h3>
                 <p className="text-[#5E5E5E] leading-relaxed">{faq.a}</p>

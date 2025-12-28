@@ -33,9 +33,9 @@ export default function Button({
 
   // Variant styles - using 2XG brand colors with direct hex values
   const variantStyles = {
-    primary: 'bg-[#8CE63A] text-[#111111] hover:brightness-110 shadow-2xl shadow-[#8CE63A]/60 hover:shadow-[#8CE63A]/80 border-4 border-[#8CE63A]',
+    primary: 'bg-[#6BBF59] text-[#111111] hover:brightness-110 shadow-2xl shadow-[#6BBF59]/60 hover:shadow-[#6BBF59]/80 border-4 border-[#6BBF59]',
     secondary: 'bg-[#FF6A1A] text-white hover:brightness-110 shadow-2xl shadow-[#FF6A1A]/60 hover:shadow-[#FF6A1A]/80 border-4 border-[#FF6A1A]',
-    outline: 'bg-[#111111] text-[#8CE63A] border-4 border-[#8CE63A] hover:bg-[#8CE63A] hover:text-[#111111] shadow-xl shadow-[#8CE63A]/40 hover:shadow-[#8CE63A]/70',
+    outline: 'bg-[#111111] text-[#6BBF59] border-4 border-[#6BBF59] hover:bg-[#6BBF59] hover:text-[#111111] shadow-xl shadow-[#6BBF59]/40 hover:shadow-[#6BBF59]/70',
   };
 
   const widthStyle = fullWidth ? 'w-full' : '';

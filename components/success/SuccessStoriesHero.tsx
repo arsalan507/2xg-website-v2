@@ -25,7 +25,7 @@ export default function SuccessStoriesHero() {
         <motion.div
           className="absolute inset-0 opacity-15"
           style={{
-            background: 'radial-gradient(circle at 70% 50%, #8CE63A 0%, transparent 50%)',
+            background: 'radial-gradient(circle at 70% 50%, #6BBF59 0%, transparent 50%)',
           }}
           animate={{
             scale: [1.2, 1, 1.2],
@@ -43,8 +43,8 @@ export default function SuccessStoriesHero() {
       <div className="absolute inset-0 opacity-5"
         style={{
           backgroundImage: `
-            linear-gradient(#8CE63A 1px, transparent 1px),
-            linear-gradient(90deg, #8CE63A 1px, transparent 1px)
+            linear-gradient(#6BBF59 1px, transparent 1px),
+            linear-gradient(90deg, #6BBF59 1px, transparent 1px)
           `,
           backgroundSize: '40px 40px',
         }}

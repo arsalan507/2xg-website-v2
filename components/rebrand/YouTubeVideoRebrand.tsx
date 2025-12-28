@@ -17,7 +17,7 @@ export default function YouTubeVideoRebrand() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <span className="inline-block text-[#2F7D63] font-semibold text-sm uppercase tracking-wider mb-4">
+          <span className="inline-block text-[#6BBF59] font-semibold text-sm uppercase tracking-wider mb-4">
             🎬 Why 2XG
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1F1F1F] mb-4 tracking-tight">
@@ -59,7 +59,7 @@ export default function YouTubeVideoRebrand() {
               const formSection = document.querySelector('#contact-form');
               formSection?.scrollIntoView({ behavior: 'smooth' });
             }}
-            className="inline-flex items-center justify-center px-10 py-4 bg-[#2F7D63] hover:bg-[#256B54] text-white font-bold text-lg rounded-lg transition-all duration-200 shadow-md hover:shadow-lg cursor-pointer"
+            className="inline-flex items-center justify-center px-10 py-4 bg-[#6BBF59] hover:bg-[#5AA047] text-white font-bold text-lg rounded-lg transition-all duration-200 shadow-md hover:shadow-lg cursor-pointer"
           >
             Get Your Free Strategy Call 🚀
           </button>

@@ -56,7 +56,7 @@ export default function FeaturesRebrand() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="inline-block text-[#2F7D63] font-semibold text-sm uppercase tracking-wider mb-4">
+          <span className="inline-block text-[#6BBF59] font-semibold text-sm uppercase tracking-wider mb-4">
             Why 2XG
           </span>
           <h2 className="text-4xl sm:text-5xl font-bold text-[#1F1F1F] mb-6 tracking-tight">
@@ -77,15 +77,15 @@ export default function FeaturesRebrand() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="group"
             >
-              <div className="bg-[#F6F7F5] border border-[#D6D8D4] hover:border-[#2F7D63] rounded-xl p-8 h-full transition-all duration-300 hover:shadow-md">
+              <div className="bg-[#F6F7F5] border border-[#D6D8D4] hover:border-[#6BBF59] rounded-xl p-8 h-full transition-all duration-300 hover:shadow-md">
                 {/* Stat */}
                 <div className="mb-4">
-                  <div className="text-4xl font-bold text-[#2F7D63] mb-1">{feature.stat}</div>
+                  <div className="text-4xl font-bold text-[#6BBF59] mb-1">{feature.stat}</div>
                   <div className="text-sm text-[#5E5E5E] font-medium uppercase tracking-wide">{feature.metric}</div>
                 </div>
 
                 {/* Title */}
-                <h3 className="text-xl font-bold text-[#1F1F1F] mb-3 group-hover:text-[#2F7D63] transition-colors">
+                <h3 className="text-xl font-bold text-[#1F1F1F] mb-3 group-hover:text-[#6BBF59] transition-colors">
                   {feature.title}
                 </h3>
 
@@ -110,7 +110,7 @@ export default function FeaturesRebrand() {
           </p>
           <a
             href="/contact"
-            className="inline-flex items-center justify-center px-8 py-4 bg-[#2F7D63] hover:bg-[#256B54] text-white font-semibold text-base rounded-lg transition-all duration-200 shadow-sm hover:shadow-md"
+            className="inline-flex items-center justify-center px-8 py-4 bg-[#6BBF59] hover:bg-[#5AA047] text-white font-semibold text-base rounded-lg transition-all duration-200 shadow-sm hover:shadow-md"
           >
             Let's Talk Strategy
           </a>

@@ -110,7 +110,7 @@ export default function TermsRebrand() {
   return (
     <section ref={ref} className="relative min-h-screen py-32 bg-gradient-to-br from-[#F6F7F5] via-[#ECEDEB] to-[#F6F7F5] overflow-hidden">
       {/* Background Decorations */}
-      <div className="absolute top-0 left-0 w-96 h-96 bg-[#2F7D63]/5 rounded-full blur-3xl" />
+      <div className="absolute top-0 left-0 w-96 h-96 bg-[#6BBF59]/5 rounded-full blur-3xl" />
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#FF6A1A]/5 rounded-full blur-3xl" />
 
       <div className="relative z-10 max-w-4xl mx-auto px-6 lg:px-8">
@@ -121,11 +121,11 @@ export default function TermsRebrand() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="inline-block px-4 py-2 bg-[#2F7D63]/10 text-[#2F7D63] rounded-full text-sm font-semibold uppercase tracking-wider mb-4">
+          <span className="inline-block px-4 py-2 bg-[#6BBF59]/10 text-[#6BBF59] rounded-full text-sm font-semibold uppercase tracking-wider mb-4">
             Legal
           </span>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#1F1F1F] mb-6">
-            Terms of <span className="text-[#2F7D63]">Service</span>
+            Terms of <span className="text-[#6BBF59]">Service</span>
           </h1>
           <p className="text-lg sm:text-xl text-[#5E5E5E] max-w-3xl mx-auto leading-relaxed">
             Last updated: December 25, 2025
@@ -151,7 +151,7 @@ export default function TermsRebrand() {
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.1 * (index + 3) }}
-            className="bg-white border-2 border-[#D6D8D4] rounded-2xl p-8 mb-6 shadow-lg hover:border-[#2F7D63] transition-all duration-300"
+            className="bg-white border-2 border-[#D6D8D4] rounded-2xl p-8 mb-6 shadow-lg hover:border-[#6BBF59] transition-all duration-300"
           >
             <h2 className="text-2xl sm:text-3xl font-bold text-[#1F1F1F] mb-4">
               {section.title}
@@ -175,7 +175,7 @@ export default function TermsRebrand() {
         >
           <a
             href="/"
-            className="inline-flex items-center gap-2 text-[#5E5E5E] hover:text-[#2F7D63] transition-colors font-medium"
+            className="inline-flex items-center gap-2 text-[#5E5E5E] hover:text-[#6BBF59] transition-colors font-medium"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />

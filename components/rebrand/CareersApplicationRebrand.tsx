@@ -49,7 +49,7 @@ export default function CareersApplicationRebrand() {
   return (
     <section ref={ref} className="relative min-h-screen py-32 bg-gradient-to-br from-[#F6F7F5] via-[#ECEDEB] to-[#F6F7F5] overflow-hidden">
       {/* Background Decorations */}
-      <div className="absolute top-0 left-0 w-96 h-96 bg-[#2F7D63]/5 rounded-full blur-3xl" />
+      <div className="absolute top-0 left-0 w-96 h-96 bg-[#6BBF59]/5 rounded-full blur-3xl" />
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#FF6A1A]/5 rounded-full blur-3xl" />
 
       <div className="relative z-10 max-w-3xl mx-auto px-6 lg:px-8">
@@ -60,11 +60,11 @@ export default function CareersApplicationRebrand() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <span className="inline-block px-4 py-2 bg-[#2F7D63]/10 text-[#2F7D63] rounded-full text-sm font-semibold uppercase tracking-wider mb-4">
+          <span className="inline-block px-4 py-2 bg-[#6BBF59]/10 text-[#6BBF59] rounded-full text-sm font-semibold uppercase tracking-wider mb-4">
             Join Our Team
           </span>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#1F1F1F] mb-6">
-            Apply for a <span className="text-[#2F7D63]">Position</span>
+            Apply for a <span className="text-[#6BBF59]">Position</span>
           </h1>
           <p className="text-lg sm:text-xl text-[#5E5E5E] max-w-2xl mx-auto leading-relaxed">
             Fill out the form below and we'll get back to you within 48 hours.
@@ -84,7 +84,7 @@ export default function CareersApplicationRebrand() {
               animate={{ opacity: 1, scale: 1 }}
               className="text-center py-12"
             >
-              <div className="w-20 h-20 bg-[#2F7D63] rounded-full flex items-center justify-center mx-auto mb-6">
+              <div className="w-20 h-20 bg-[#6BBF59] rounded-full flex items-center justify-center mx-auto mb-6">
                 <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
@@ -108,7 +108,7 @@ export default function CareersApplicationRebrand() {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-5 py-4 border-2 border-[#D6D8D4] rounded-xl focus:border-[#2F7D63] focus:ring-2 focus:ring-[#2F7D63]/20 focus:outline-none transition-all text-[#1F1F1F] bg-[#F6F7F5] hover:bg-white text-base"
+                  className="w-full px-5 py-4 border-2 border-[#D6D8D4] rounded-xl focus:border-[#6BBF59] focus:ring-2 focus:ring-[#6BBF59]/20 focus:outline-none transition-all text-[#1F1F1F] bg-[#F6F7F5] hover:bg-white text-base"
                   placeholder="Enter your full name"
                 />
               </div>
@@ -125,7 +125,7 @@ export default function CareersApplicationRebrand() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-5 py-4 border-2 border-[#D6D8D4] rounded-xl focus:border-[#2F7D63] focus:ring-2 focus:ring-[#2F7D63]/20 focus:outline-none transition-all text-[#1F1F1F] bg-[#F6F7F5] hover:bg-white text-base"
+                  className="w-full px-5 py-4 border-2 border-[#D6D8D4] rounded-xl focus:border-[#6BBF59] focus:ring-2 focus:ring-[#6BBF59]/20 focus:outline-none transition-all text-[#1F1F1F] bg-[#F6F7F5] hover:bg-white text-base"
                   placeholder="your.email@example.com"
                 />
               </div>
@@ -142,7 +142,7 @@ export default function CareersApplicationRebrand() {
                   value={formData.phone}
                   onChange={handleChange}
                   required
-                  className="w-full px-5 py-4 border-2 border-[#D6D8D4] rounded-xl focus:border-[#2F7D63] focus:ring-2 focus:ring-[#2F7D63]/20 focus:outline-none transition-all text-[#1F1F1F] bg-[#F6F7F5] hover:bg-white text-base"
+                  className="w-full px-5 py-4 border-2 border-[#D6D8D4] rounded-xl focus:border-[#6BBF59] focus:ring-2 focus:ring-[#6BBF59]/20 focus:outline-none transition-all text-[#1F1F1F] bg-[#F6F7F5] hover:bg-white text-base"
                   placeholder="+91 98765 43210"
                 />
               </div>
@@ -158,9 +158,9 @@ export default function CareersApplicationRebrand() {
                   value={formData.position}
                   onChange={handleChange}
                   required
-                  className="w-full px-5 py-4 border-2 border-[#D6D8D4] rounded-xl focus:border-[#2F7D63] focus:ring-2 focus:ring-[#2F7D63]/20 focus:outline-none transition-all text-[#1F1F1F] bg-[#F6F7F5] hover:bg-white text-base appearance-none cursor-pointer"
+                  className="w-full px-5 py-4 border-2 border-[#D6D8D4] rounded-xl focus:border-[#6BBF59] focus:ring-2 focus:ring-[#6BBF59]/20 focus:outline-none transition-all text-[#1F1F1F] bg-[#F6F7F5] hover:bg-white text-base appearance-none cursor-pointer"
                   style={{
-                    backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%232F7D63'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E")`,
+                    backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%236BBF59'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E")`,
                     backgroundRepeat: 'no-repeat',
                     backgroundPosition: 'right 1rem center',
                     backgroundSize: '1.5em 1.5em',
@@ -189,7 +189,7 @@ export default function CareersApplicationRebrand() {
                     onChange={handleFileChange}
                     accept=".pdf,.doc,.docx"
                     required
-                    className="w-full px-5 py-4 border-2 border-[#D6D8D4] rounded-xl focus:border-[#2F7D63] focus:ring-2 focus:ring-[#2F7D63]/20 focus:outline-none transition-all text-[#1F1F1F] bg-[#F6F7F5] hover:bg-white file:mr-4 file:py-2.5 file:px-5 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-[#2F7D63] file:text-white hover:file:bg-[#256B54] file:cursor-pointer file:transition-colors"
+                    className="w-full px-5 py-4 border-2 border-[#D6D8D4] rounded-xl focus:border-[#6BBF59] focus:ring-2 focus:ring-[#6BBF59]/20 focus:outline-none transition-all text-[#1F1F1F] bg-[#F6F7F5] hover:bg-white file:mr-4 file:py-2.5 file:px-5 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-[#6BBF59] file:text-white hover:file:bg-[#5AA047] file:cursor-pointer file:transition-colors"
                   />
                 </div>
                 <p className="mt-3 text-xs text-[#5E5E5E]">
@@ -201,7 +201,7 @@ export default function CareersApplicationRebrand() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full px-8 py-4 bg-[#2F7D63] hover:bg-[#256B54] disabled:bg-[#5E5E5E] text-white font-bold text-lg rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl hover:-translate-y-1 disabled:hover:translate-y-0"
+                className="w-full px-8 py-4 bg-[#6BBF59] hover:bg-[#5AA047] disabled:bg-[#5E5E5E] text-white font-bold text-lg rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl hover:-translate-y-1 disabled:hover:translate-y-0"
               >
                 {isSubmitting ? 'Submitting Application...' : 'Submit Application →'}
               </button>
@@ -213,7 +213,7 @@ export default function CareersApplicationRebrand() {
             <div className="mt-8 pt-8 border-t border-[#D6D8D4]">
               <p className="text-center text-sm text-[#5E5E5E]">
                 Prefer to email? Send your CV to{' '}
-                <a href="mailto:careers@2xg.in" className="text-[#2F7D63] hover:underline font-semibold">
+                <a href="mailto:careers@2xg.in" className="text-[#6BBF59] hover:underline font-semibold">
                   careers@2xg.in
                 </a>
               </p>
@@ -230,7 +230,7 @@ export default function CareersApplicationRebrand() {
         >
           <a
             href="/careers"
-            className="inline-flex items-center gap-2 text-[#5E5E5E] hover:text-[#2F7D63] transition-colors font-medium"
+            className="inline-flex items-center gap-2 text-[#5E5E5E] hover:text-[#6BBF59] transition-colors font-medium"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />

@@ -48,11 +48,11 @@ const SlideCard = ({ slide, dragX, index }: { slide: SuccessSlide; dragX: any; i
             opacity: isHovered ? 0.3 : 0,
           }}
           transition={{ duration: 0.3 }}
-          className="absolute -inset-[2px] bg-[#2F7D63] rounded-3xl blur-2xl opacity-0"
+          className="absolute -inset-[2px] bg-[#6BBF59] rounded-3xl blur-2xl opacity-0"
         />
 
         {/* Main card container */}
-        <div className="relative bg-white border-2 border-[#D6D8D4] hover:border-[#2F7D63] rounded-3xl overflow-hidden backdrop-blur-sm h-full transition-all duration-300 shadow-lg">
+        <div className="relative bg-white border-2 border-[#D6D8D4] hover:border-[#6BBF59] rounded-3xl overflow-hidden backdrop-blur-sm h-full transition-all duration-300 shadow-lg">
           {/* Content wrapper */}
           <div className="relative z-10 p-6 sm:p-8 flex flex-col h-full">
             {/* Badge */}
@@ -62,7 +62,7 @@ const SlideCard = ({ slide, dragX, index }: { slide: SuccessSlide; dragX: any; i
               transition={{ delay: 0.2 }}
               className="mb-4"
             >
-              <span className="inline-flex items-center gap-2 bg-[#2F7D63]/10 border border-[#2F7D63]/30 rounded-full px-4 py-2 text-[#2F7D63] font-bold text-xs sm:text-sm uppercase tracking-wider">
+              <span className="inline-flex items-center gap-2 bg-[#6BBF59]/10 border border-[#6BBF59]/30 rounded-full px-4 py-2 text-[#6BBF59] font-bold text-xs sm:text-sm uppercase tracking-wider">
                 <motion.span
                   animate={{ scale: [1, 1.2, 1] }}
                   transition={{ duration: 2, repeat: Infinity }}
@@ -96,7 +96,7 @@ const SlideCard = ({ slide, dragX, index }: { slide: SuccessSlide; dragX: any; i
                 animate={{
                   opacity: isHovered ? 1 : 0,
                 }}
-                className="absolute inset-0 border-2 border-[#2F7D63]/50 rounded-xl z-10 pointer-events-none"
+                className="absolute inset-0 border-2 border-[#6BBF59]/50 rounded-xl z-10 pointer-events-none"
               />
 
               <Image
@@ -113,7 +113,7 @@ const SlideCard = ({ slide, dragX, index }: { slide: SuccessSlide; dragX: any; i
               animate={{
                 backgroundColor: isHovered ? 'rgba(47, 125, 99, 0.1)' : 'rgba(47, 125, 99, 0.05)',
               }}
-              className="bg-[#2F7D63]/5 border border-[#2F7D63]/20 rounded-xl px-5 py-4 mb-4"
+              className="bg-[#6BBF59]/5 border border-[#6BBF59]/20 rounded-xl px-5 py-4 mb-4"
             >
               <div className="flex items-center gap-3">
                 <motion.span
@@ -126,7 +126,7 @@ const SlideCard = ({ slide, dragX, index }: { slide: SuccessSlide; dragX: any; i
                   📊
                 </motion.span>
                 <div>
-                  <div className="text-xl sm:text-2xl font-bold text-[#2F7D63]">
+                  <div className="text-xl sm:text-2xl font-bold text-[#6BBF59]">
                     {slide.stats}
                   </div>
                   <div className="text-xs sm:text-sm text-[#5E5E5E]">
@@ -138,7 +138,7 @@ const SlideCard = ({ slide, dragX, index }: { slide: SuccessSlide; dragX: any; i
 
             {/* Insight - Value Proposition */}
             <div className="mt-auto">
-              <p className="text-sm sm:text-base text-[#5E5E5E] italic leading-relaxed border-l-2 border-[#2F7D63]/50 pl-4">
+              <p className="text-sm sm:text-base text-[#5E5E5E] italic leading-relaxed border-l-2 border-[#6BBF59]/50 pl-4">
                 "{slide.insight}"
               </p>
             </div>
@@ -153,7 +153,7 @@ const SlideCard = ({ slide, dragX, index }: { slide: SuccessSlide; dragX: any; i
               duration: 1.5,
               ease: 'easeInOut',
             }}
-            className="absolute inset-0 bg-gradient-to-r from-transparent via-[#2F7D63]/10 to-transparent pointer-events-none"
+            className="absolute inset-0 bg-gradient-to-r from-transparent via-[#6BBF59]/10 to-transparent pointer-events-none"
           />
         </div>
       </motion.div>
@@ -293,7 +293,7 @@ export default function YouTubeSuccessSliderRebrand() {
       <div
         className="absolute inset-0 opacity-[0.02]"
         style={{
-          backgroundImage: `radial-gradient(circle at 2px 2px, #2F7D63 1px, transparent 0)`,
+          backgroundImage: `radial-gradient(circle at 2px 2px, #6BBF59 1px, transparent 0)`,
           backgroundSize: '50px 50px',
         }}
       />
@@ -315,7 +315,7 @@ export default function YouTubeSuccessSliderRebrand() {
         className="fixed top-0 left-0 w-16 h-16 -translate-x-1/2 -translate-y-1/2 pointer-events-none z-50"
       >
         <div className="relative w-full h-full">
-          <div className="absolute inset-0 bg-[#2F7D63] rounded-full shadow-lg" />
+          <div className="absolute inset-0 bg-[#6BBF59] rounded-full shadow-lg" />
           <motion.div
             animate={{
               scale: [1, 1.2, 1],
@@ -325,7 +325,7 @@ export default function YouTubeSuccessSliderRebrand() {
               duration: 2,
               repeat: Infinity,
             }}
-            className="absolute inset-0 border-2 border-[#2F7D63] rounded-full"
+            className="absolute inset-0 border-2 border-[#6BBF59] rounded-full"
           />
           <div className="absolute inset-0 flex items-center justify-center text-white text-xl">
             {isDragging ? '✊' : '✋'}
@@ -343,7 +343,7 @@ export default function YouTubeSuccessSliderRebrand() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-[#2F7D63] font-semibold text-sm sm:text-base mb-4 tracking-wider uppercase"
+            className="text-[#6BBF59] font-semibold text-sm sm:text-base mb-4 tracking-wider uppercase"
           >
             🎬 YouTube Success Story
           </motion.p>
@@ -356,7 +356,7 @@ export default function YouTubeSuccessSliderRebrand() {
           >
             The Content System That Built
             <br />
-            <span className="text-[#2F7D63]">India's #1 Bicycle Channel 🚴</span>
+            <span className="text-[#6BBF59]">India's #1 Bicycle Channel 🚴</span>
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}

@@ -58,6 +58,7 @@ export const industriesData: Record<string, IndustryData> = {
         'UGC from happy diners converts better than professional shoots',
         'Menu visibility drives walk-ins, not just aesthetic posts',
       ],
+      sideImage: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80',
     },
     framework: {
       title: 'The 2X Growth Framework for Restaurants',
@@ -160,6 +161,7 @@ export const industriesData: Record<string, IndustryData> = {
         'Real wedding content converts 5x better than studio shoots',
         'Instagram is where the journey starts, showroom is where it ends',
       ],
+      sideImage: 'https://images.unsplash.com/photo-1606800052052-a08af7148866?w=800&q=80',
     },
     framework: {
       title: 'The 2X Growth Framework for Bridal Wear',
@@ -244,12 +246,13 @@ export const industriesData: Record<string, IndustryData> = {
 
   'real-estate': {
     slug: 'real-estate',
-    name: 'Real Estate',
+    name: 'Real Estate 🏢',
     hero: {
       headline: 'From Brochures to Booked Site Visits',
       subheadline: 'We help real estate brands generate qualified leads and turn interest into site visits.',
       accentColor: '#0052FF',
       bgGradient: 'linear-gradient(135deg, #1F1F1F 0%, #1A2332 100%)',
+      bgImage: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1920&q=90',
     },
     insights: {
       title: 'We Understand This Business',
@@ -549,12 +552,13 @@ export const industriesData: Record<string, IndustryData> = {
 
   'car-wash-detailing': {
     slug: 'car-wash-detailing',
-    name: 'Car Wash & Detailing',
+    name: 'Car Wash & Detailing 🚗',
     hero: {
       headline: 'From One-Time Washes to Monthly Memberships',
       subheadline: 'We help car care businesses turn visible transformations into recurring customers and predictable revenue.',
       accentColor: '#4169E1',
       bgGradient: 'linear-gradient(135deg, #1F1F1F 0%, #1A1F2A 100%)',
+      bgImage: 'https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?w=1920&q=90',
     },
     insights: {
       title: 'We Understand This Business',
@@ -566,6 +570,7 @@ export const industriesData: Record<string, IndustryData> = {
         'Trust in product quality and technique is critical for high-ticket services',
         'Instagram and Google My Business drive local discovery',
       ],
+      sideImage: 'https://images.unsplash.com/photo-1607860108855-64acf2078ed9?w=800&q=80',
     },
     framework: {
       title: 'The 2X Growth Framework for Car Wash & Detailing',

@@ -36,7 +36,7 @@ html {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #8CE63A;
+  background: #6BBF59;
 }
 
 .text-balance {
@@ -44,7 +44,7 @@ html {
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #0052FF 0%, #8CE63A 100%);
+  background: linear-gradient(135deg, #0052FF 0%, #6BBF59 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -54,11 +54,11 @@ html {
   position: relative;
   border: 2px solid transparent;
   background: linear-gradient(#181A1F, #181A1F) padding-box,
-              linear-gradient(135deg, #0052FF, #8CE63A) border-box;
+              linear-gradient(135deg, #0052FF, #6BBF59) border-box;
 }
 
 .glow-effect {
-  box-shadow: 0 0 20px rgba(140, 230, 58, 0.3);
+  box-shadow: 0 0 20px rgba(107, 191, 89, 0.3);
 }
 
 .glow-effect-blue {
@@ -72,9 +72,9 @@ html {
   background-image: linear-gradient(
     90deg,
     #0052FF 0%,
-    #8CE63A 25%,
+    #6BBF59 25%,
     #FF6A1A 50%,
-    #8CE63A 75%,
+    #6BBF59 75%,
     #0052FF 100%
   );
   background-size: 200%;

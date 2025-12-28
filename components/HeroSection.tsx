@@ -41,7 +41,7 @@ export default function HeroSection() {
         <motion.div
           className="absolute inset-0 opacity-20"
           style={{
-            background: 'radial-gradient(circle at 80% 20%, #8CE63A 0%, transparent 50%)',
+            background: 'radial-gradient(circle at 80% 20%, #6BBF59 0%, transparent 50%)',
             x: mousePosition.x,
             y: mousePosition.y,
           }}
@@ -52,8 +52,8 @@ export default function HeroSection() {
       <div className="absolute inset-0 opacity-5"
         style={{
           backgroundImage: `
-            linear-gradient(#8CE63A 1px, transparent 1px),
-            linear-gradient(90deg, #8CE63A 1px, transparent 1px)
+            linear-gradient(#6BBF59 1px, transparent 1px),
+            linear-gradient(90deg, #6BBF59 1px, transparent 1px)
           `,
           backgroundSize: '50px 50px',
         }}

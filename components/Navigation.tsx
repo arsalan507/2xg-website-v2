@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import Image from 'next/image';
 import Button from './ui/Button';
 
 export default function Navigation() {
@@ -39,14 +40,18 @@ export default function Navigation() {
           {/* Logo */}
           <motion.a
             href="/"
-            className="flex items-center space-x-2"
+            className="flex items-center"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <span className="text-3xl font-montserrat font-black">
-              <span className="text-neon-green">2X</span>
-              <span className="text-deep-blue">G</span>
-            </span>
+            <Image
+              src="/2xg-logo.gif"
+              alt="2XG Logo"
+              width={60}
+              height={60}
+              className="object-contain"
+              unoptimized
+            />
           </motion.a>
 
           {/* Desktop Navigation */}
@@ -87,21 +92,21 @@ export default function Navigation() {
                   closed: { rotate: 0, y: 0 },
                   open: { rotate: 45, y: 9 },
                 }}
-                className="w-full h-1 bg-[#8CE63A] rounded block transition-all"
+                className="w-full h-1 bg-[#6BBF59] rounded block transition-all"
               />
               <motion.span
                 variants={{
                   closed: { opacity: 1 },
                   open: { opacity: 0 },
                 }}
-                className="w-full h-1 bg-[#8CE63A] rounded block transition-all"
+                className="w-full h-1 bg-[#6BBF59] rounded block transition-all"
               />
               <motion.span
                 variants={{
                   closed: { rotate: 0, y: 0 },
                   open: { rotate: -45, y: -9 },
                 }}
-                className="w-full h-1 bg-[#8CE63A] rounded block transition-all"
+                className="w-full h-1 bg-[#6BBF59] rounded block transition-all"
               />
             </motion.div>
           </motion.button>
@@ -118,7 +123,7 @@ export default function Navigation() {
             className="md:hidden relative overflow-hidden bg-gradient-to-br from-[#0052FF]/10 via-graphite-dark to-graphite-dark border-t-2 border-neon-green/30"
           >
             {/* Accent Background Elements - matching footer */}
-            <div className="absolute top-0 right-0 w-48 h-48 bg-gradient-to-bl from-[#8CE63A]/5 to-transparent rounded-full blur-3xl" />
+            <div className="absolute top-0 right-0 w-48 h-48 bg-gradient-to-bl from-[#6BBF59]/5 to-transparent rounded-full blur-3xl" />
             <div className="absolute bottom-0 left-0 w-48 h-48 bg-gradient-to-tr from-[#0052FF]/5 to-transparent rounded-full blur-3xl" />
 
             <div className="relative z-10 px-4 py-6 space-y-4">

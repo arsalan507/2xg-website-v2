@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Montserrat } from "next/font/google";
 import "./globals.css";
 import ScrollProgress from "@/components/ScrollProgress";
+import { AuthProvider } from "@/contexts/AuthContext";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -21,6 +22,11 @@ export const metadata: Metadata = {
   description: "We build content systems for mobility & retail brands. From 25M views to predictable sales. Proven track record with BCH and EM Doodle.",
   keywords: ["content marketing", "growth agency", "mobility marketing", "retail marketing", "content systems", "2XG"],
   authors: [{ name: "2XG" }],
+  icons: {
+    icon: '/favicon.gif',
+    shortcut: '/favicon.gif',
+    apple: '/favicon.gif',
+  },
   openGraph: {
     title: "2XG - Content That Doubles Growth",
     description: "We build content systems for mobility & retail brands. 25M+ monthly views.",
@@ -42,8 +48,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${montserrat.variable}`}>
       <body className="antialiased">
-        <ScrollProgress />
-        {children}
+        <AuthProvider>
+          <ScrollProgress />
+          {children}
+        </AuthProvider>
       </body>
     </html>
   );

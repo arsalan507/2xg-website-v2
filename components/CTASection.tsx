@@ -16,7 +16,7 @@ export default function CTASection() {
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-r from-[#0052FF]/20 via-[#8CE63A]/20 to-[#FF6A1A]/20 rounded-full blur-3xl"
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-r from-[#0052FF]/20 via-[#6BBF59]/20 to-[#FF6A1A]/20 rounded-full blur-3xl"
           animate={{
             scale: [1, 1.2, 1],
             rotate: [0, 180, 360],
@@ -28,7 +28,7 @@ export default function CTASection() {
           }}
         />
         <motion.div
-          className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-[#8CE63A]/10 to-transparent rounded-full blur-3xl"
+          className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-[#6BBF59]/10 to-transparent rounded-full blur-3xl"
           animate={{
             x: [0, -50, 0],
             y: [0, 50, 0],
@@ -58,8 +58,8 @@ export default function CTASection() {
         className="absolute inset-0 opacity-5"
         style={{
           backgroundImage: `
-            linear-gradient(#8CE63A 1px, transparent 1px),
-            linear-gradient(90deg, #8CE63A 1px, transparent 1px)
+            linear-gradient(#6BBF59 1px, transparent 1px),
+            linear-gradient(90deg, #6BBF59 1px, transparent 1px)
           `,
           backgroundSize: '50px 50px',
         }}
@@ -118,7 +118,7 @@ export default function CTASection() {
             className="text-lg sm:text-xl md:text-2xl text-off-white/90 font-inter max-w-4xl mx-auto mb-8 leading-relaxed"
           >
             While your competitors post daily (and see zero ROI), our clients post 3x per week—
-            <span className="text-[#8CE63A] font-semibold"> and dominate their market.</span>
+            <span className="text-[#6BBF59] font-semibold"> and dominate their market.</span>
           </motion.p>
 
           {/* Urgency Message */}
@@ -140,7 +140,7 @@ export default function CTASection() {
           >
             {/* Pulsing ring effect */}
             <motion.div
-              className="absolute inset-0 rounded-xl bg-[#8CE63A]/30"
+              className="absolute inset-0 rounded-xl bg-[#6BBF59]/30"
               animate={{
                 scale: [1, 1.1, 1],
                 opacity: [0.5, 0, 0.5],

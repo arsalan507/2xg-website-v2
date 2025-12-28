@@ -39,7 +39,7 @@ export default function FinalCTARebrand() {
       <div
         className="absolute inset-0 opacity-[0.02]"
         style={{
-          backgroundImage: `radial-gradient(circle at 2px 2px, #2F7D63 1px, transparent 0)`,
+          backgroundImage: `radial-gradient(circle at 2px 2px, #6BBF59 1px, transparent 0)`,
           backgroundSize: '48px 48px',
         }}
       />
@@ -52,7 +52,7 @@ export default function FinalCTARebrand() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <span className="inline-block text-[#2F7D63] font-semibold text-sm uppercase tracking-wider mb-4">
+          <span className="inline-block text-[#6BBF59] font-semibold text-sm uppercase tracking-wider mb-4">
             🚀 Ready to Get Started?
           </span>
           <h2 className="text-4xl sm:text-5xl font-bold text-[#1F1F1F] mb-6 tracking-tight">
@@ -121,7 +121,7 @@ export default function FinalCTARebrand() {
                 required
                 value={formData.name}
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                className="w-full px-4 py-3 border-2 border-[#D6D8D4] rounded-lg focus:border-[#2F7D63] focus:outline-none transition-colors duration-200 text-[#1F1F1F] placeholder-[#5E5E5E]"
+                className="w-full px-4 py-3 border-2 border-[#D6D8D4] rounded-lg focus:border-[#6BBF59] focus:outline-none transition-colors duration-200 text-[#1F1F1F] placeholder-[#5E5E5E]"
                 placeholder="Enter your full name"
               />
             </div>
@@ -137,7 +137,7 @@ export default function FinalCTARebrand() {
                 required
                 value={formData.phone}
                 onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                className="w-full px-4 py-3 border-2 border-[#D6D8D4] rounded-lg focus:border-[#2F7D63] focus:outline-none transition-colors duration-200 text-[#1F1F1F] placeholder-[#5E5E5E]"
+                className="w-full px-4 py-3 border-2 border-[#D6D8D4] rounded-lg focus:border-[#6BBF59] focus:outline-none transition-colors duration-200 text-[#1F1F1F] placeholder-[#5E5E5E]"
                 placeholder="+91 98765 43210"
               />
             </div>
@@ -146,7 +146,7 @@ export default function FinalCTARebrand() {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="w-full px-10 py-4 bg-[#2F7D63] hover:bg-[#256B54] text-white font-bold text-lg rounded-lg transition-all duration-200 shadow-md hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-full px-10 py-4 bg-[#6BBF59] hover:bg-[#5AA047] text-white font-bold text-lg rounded-lg transition-all duration-200 shadow-md hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {isSubmitting ? 'Submitting... ⏳' : 'Get My Free Strategy Call 🎯'}
             </button>
@@ -168,7 +168,7 @@ export default function FinalCTARebrand() {
           <p className="text-[#5E5E5E] text-sm mb-4 font-medium">
             Join 100+ brands growing with 2XG 🌟
           </p>
-          <div className="flex flex-wrap items-center justify-center gap-6 text-[#2F7D63]">
+          <div className="flex flex-wrap items-center justify-center gap-6 text-[#6BBF59]">
             <div className="flex items-center gap-2">
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>

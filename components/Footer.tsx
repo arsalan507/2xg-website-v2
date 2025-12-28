@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <footer className="relative bg-gradient-to-br from-[#0052FF]/10 via-graphite-dark to-graphite-dark border-t-2 border-neon-green/30 overflow-hidden">
       {/* Accent Background Elements */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-[#8CE63A]/5 to-transparent rounded-full blur-3xl" />
+      <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-[#6BBF59]/5 to-transparent rounded-full blur-3xl" />
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-[#0052FF]/5 to-transparent rounded-full blur-3xl" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -97,7 +97,7 @@ export default function Footer() {
       </div>
 
       {/* Gradient Line at Bottom */}
-      <div className="h-2 bg-gradient-to-r from-[#0052FF] via-[#8CE63A] to-[#FF6A1A]" />
+      <div className="h-2 bg-gradient-to-r from-[#0052FF] via-[#6BBF59] to-[#FF6A1A]" />
     </footer>
   );
 }

@@ -82,7 +82,7 @@ export default function CareersRebrand() {
         className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#F6F7F5] via-[#ECEDEB] to-[#F6F7F5] pt-32 pb-20"
       >
         {/* Background Decorations */}
-        <div className="absolute top-20 left-0 w-96 h-96 bg-[#2F7D63]/5 rounded-full blur-3xl" />
+        <div className="absolute top-20 left-0 w-96 h-96 bg-[#6BBF59]/5 rounded-full blur-3xl" />
         <div className="absolute bottom-20 right-0 w-96 h-96 bg-[#FF6A1A]/5 rounded-full blur-3xl" />
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 text-center">
@@ -95,7 +95,7 @@ export default function CareersRebrand() {
               initial={{ opacity: 0 }}
               animate={isHeroInView ? { opacity: 1 } : {}}
               transition={{ delay: 0.2 }}
-              className="inline-block px-4 py-2 bg-[#2F7D63]/10 text-[#2F7D63] rounded-full text-sm font-semibold uppercase tracking-wider mb-6"
+              className="inline-block px-4 py-2 bg-[#6BBF59]/10 text-[#6BBF59] rounded-full text-sm font-semibold uppercase tracking-wider mb-6"
             >
               Careers at 2XG
             </motion.p>
@@ -106,7 +106,7 @@ export default function CareersRebrand() {
               transition={{ delay: 0.4 }}
               className="text-5xl sm:text-6xl md:text-7xl font-bold mb-8 leading-tight text-[#1F1F1F]"
             >
-              Join the <span className="text-[#2F7D63]">2XG Revolution</span>
+              Join the <span className="text-[#6BBF59]">2XG Revolution</span>
             </motion.h1>
 
             <motion.p
@@ -116,7 +116,7 @@ export default function CareersRebrand() {
               className="text-xl md:text-2xl text-[#5E5E5E] max-w-4xl mx-auto mb-12 leading-relaxed"
             >
               Create content and growth systems that turn views into customers and revenue.
-              Work with <span className="text-[#2F7D63] font-semibold">ambitious brands</span> across India.
+              Work with <span className="text-[#6BBF59] font-semibold">ambitious brands</span> across India.
             </motion.p>
 
             <motion.div
@@ -126,7 +126,7 @@ export default function CareersRebrand() {
             >
               <a
                 href="#positions"
-                className="inline-flex items-center justify-center px-8 py-4 bg-[#2F7D63] hover:bg-[#256B54] text-white font-semibold text-lg rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl hover:-translate-y-1"
+                className="inline-flex items-center justify-center px-8 py-4 bg-[#6BBF59] hover:bg-[#5AA047] text-white font-semibold text-lg rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl hover:-translate-y-1"
               >
                 Explore Open Positions →
               </a>
@@ -137,7 +137,7 @@ export default function CareersRebrand() {
 
       {/* Why Join 2XG Section */}
       <section ref={whyJoinRef} className="relative py-20 sm:py-32 bg-white overflow-hidden">
-        <div className="absolute top-0 left-0 w-96 h-96 bg-[#2F7D63]/5 rounded-full blur-3xl" />
+        <div className="absolute top-0 left-0 w-96 h-96 bg-[#6BBF59]/5 rounded-full blur-3xl" />
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#FF6A1A]/5 rounded-full blur-3xl" />
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
@@ -148,7 +148,7 @@ export default function CareersRebrand() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#1F1F1F] mb-6">
-              Why Join <span className="text-[#2F7D63]">2XG</span>?
+              Why Join <span className="text-[#6BBF59]">2XG</span>?
             </h2>
             <p className="text-lg sm:text-xl text-[#5E5E5E] max-w-3xl mx-auto">
               Work with a team that's building the future of content-driven growth in India.
@@ -162,12 +162,12 @@ export default function CareersRebrand() {
                 initial={{ opacity: 0, y: 30 }}
                 animate={isWhyJoinInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ delay: index * 0.1, duration: 0.6 }}
-                className="group relative bg-[#F6F7F5] rounded-2xl p-8 border-2 border-[#D6D8D4] hover:border-[#2F7D63] transition-all duration-500 shadow-sm hover:shadow-lg"
+                className="group relative bg-[#F6F7F5] rounded-2xl p-8 border-2 border-[#D6D8D4] hover:border-[#6BBF59] transition-all duration-500 shadow-sm hover:shadow-lg"
               >
-                <div className="absolute inset-0 bg-gradient-to-br from-[#2F7D63]/5 to-[#FF6A1A]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl" />
+                <div className="absolute inset-0 bg-gradient-to-br from-[#6BBF59]/5 to-[#FF6A1A]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl" />
                 <div className="relative z-10">
                   <div className="text-6xl mb-4">{reason.icon}</div>
-                  <h3 className="text-2xl font-bold text-[#1F1F1F] mb-3 group-hover:text-[#2F7D63] transition-colors duration-300">
+                  <h3 className="text-2xl font-bold text-[#1F1F1F] mb-3 group-hover:text-[#6BBF59] transition-colors duration-300">
                     {reason.title}
                   </h3>
                   <p className="text-[#5E5E5E] leading-relaxed">{reason.description}</p>
@@ -180,8 +180,8 @@ export default function CareersRebrand() {
 
       {/* Open Positions Section */}
       <section id="positions" ref={positionsRef} className="relative py-20 sm:py-32 bg-[#ECEDEB] overflow-hidden">
-        <div className="absolute top-20 left-0 w-96 h-96 bg-[#2F7D63]/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-20 right-0 w-96 h-96 bg-[#8CE63A]/10 rounded-full blur-3xl" />
+        <div className="absolute top-20 left-0 w-96 h-96 bg-[#6BBF59]/10 rounded-full blur-3xl" />
+        <div className="absolute bottom-20 right-0 w-96 h-96 bg-[#6BBF59]/10 rounded-full blur-3xl" />
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
           <motion.div
@@ -190,11 +190,11 @@ export default function CareersRebrand() {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <span className="inline-block px-4 py-2 bg-[#2F7D63]/10 text-[#2F7D63] rounded-full text-sm font-semibold uppercase tracking-wider mb-4">
+            <span className="inline-block px-4 py-2 bg-[#6BBF59]/10 text-[#6BBF59] rounded-full text-sm font-semibold uppercase tracking-wider mb-4">
               Current Openings
             </span>
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#1F1F1F] mb-6">
-              Open <span className="text-[#2F7D63]">Positions</span>
+              Open <span className="text-[#6BBF59]">Positions</span>
             </h2>
             <p className="text-lg sm:text-xl text-[#5E5E5E] max-w-3xl mx-auto">
               Join our team and work on campaigns that reach millions.
@@ -208,20 +208,20 @@ export default function CareersRebrand() {
                 initial={{ opacity: 0, x: -50 }}
                 animate={isPositionsInView ? { opacity: 1, x: 0 } : {}}
                 transition={{ delay: index * 0.1, duration: 0.6 }}
-                className="group relative bg-white rounded-2xl p-8 border-2 border-[#D6D8D4] hover:border-[#2F7D63] transition-all duration-500 shadow-md hover:shadow-xl"
+                className="group relative bg-white rounded-2xl p-8 border-2 border-[#D6D8D4] hover:border-[#6BBF59] transition-all duration-500 shadow-md hover:shadow-xl"
               >
-                <div className="absolute inset-0 opacity-0 group-hover:opacity-5 transition-opacity duration-500 bg-gradient-to-br from-[#2F7D63] to-[#8CE63A] rounded-2xl" />
+                <div className="absolute inset-0 opacity-0 group-hover:opacity-5 transition-opacity duration-500 bg-gradient-to-br from-[#6BBF59] to-[#6BBF59] rounded-2xl" />
 
                 <div className="relative z-10 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
                   <div className="flex-1">
-                    <h3 className="text-2xl sm:text-3xl font-bold text-[#1F1F1F] mb-3 group-hover:text-[#2F7D63] transition-colors duration-300">
+                    <h3 className="text-2xl sm:text-3xl font-bold text-[#1F1F1F] mb-3 group-hover:text-[#6BBF59] transition-colors duration-300">
                       {position.title}
                     </h3>
                     <div className="flex flex-wrap items-center gap-3 mb-4">
-                      <span className="px-4 py-2 bg-[#2F7D63]/10 border border-[#2F7D63]/30 rounded-lg text-sm text-[#2F7D63] font-medium">
+                      <span className="px-4 py-2 bg-[#6BBF59]/10 border border-[#6BBF59]/30 rounded-lg text-sm text-[#6BBF59] font-medium">
                         {position.type}
                       </span>
-                      <span className="px-4 py-2 bg-[#8CE63A]/10 border border-[#8CE63A]/30 rounded-lg text-sm text-[#2F7D63] font-medium">
+                      <span className="px-4 py-2 bg-[#6BBF59]/10 border border-[#6BBF59]/30 rounded-lg text-sm text-[#6BBF59] font-medium">
                         {position.location}
                       </span>
                       <span className="px-4 py-2 bg-[#ECEDEB] border border-[#D6D8D4] rounded-lg text-sm text-[#5E5E5E] font-medium">
@@ -234,7 +234,7 @@ export default function CareersRebrand() {
                   <div className="lg:ml-8">
                     <a
                       href="/careers/apply"
-                      className="inline-flex items-center justify-center px-6 py-3 bg-[#2F7D63] hover:bg-[#256B54] text-white font-semibold rounded-lg transition-all duration-200 shadow-md hover:shadow-lg"
+                      className="inline-flex items-center justify-center px-6 py-3 bg-[#6BBF59] hover:bg-[#5AA047] text-white font-semibold rounded-lg transition-all duration-200 shadow-md hover:shadow-lg"
                     >
                       Apply Now
                     </a>
@@ -248,7 +248,7 @@ export default function CareersRebrand() {
 
       {/* Team Culture Section with Images */}
       <section ref={teamCultureRef} className="relative py-20 sm:py-32 bg-white overflow-hidden">
-        <div className="absolute top-0 left-0 w-96 h-96 bg-[#2F7D63]/5 rounded-full blur-3xl" />
+        <div className="absolute top-0 left-0 w-96 h-96 bg-[#6BBF59]/5 rounded-full blur-3xl" />
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#FF6A1A]/5 rounded-full blur-3xl" />
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
@@ -259,7 +259,7 @@ export default function CareersRebrand() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#1F1F1F] mb-6">
-              Our Team <span className="text-[#2F7D63]">Culture</span>
+              Our Team <span className="text-[#6BBF59]">Culture</span>
             </h2>
             <p className="text-lg sm:text-xl text-[#5E5E5E] max-w-3xl mx-auto">
               A glimpse into life at 2XG - collaboration, creativity, and growth.
@@ -338,8 +338,8 @@ export default function CareersRebrand() {
 
       {/* Office Life & Remote Work Section */}
       <section ref={officeLifeRef} className="relative py-20 sm:py-32 bg-[#ECEDEB] overflow-hidden">
-        <div className="absolute top-20 left-0 w-96 h-96 bg-[#2F7D63]/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-20 right-0 w-96 h-96 bg-[#8CE63A]/10 rounded-full blur-3xl" />
+        <div className="absolute top-20 left-0 w-96 h-96 bg-[#6BBF59]/10 rounded-full blur-3xl" />
+        <div className="absolute bottom-20 right-0 w-96 h-96 bg-[#6BBF59]/10 rounded-full blur-3xl" />
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
           <motion.div
@@ -349,7 +349,7 @@ export default function CareersRebrand() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#1F1F1F] mb-6">
-              Work Your <span className="text-[#2F7D63]">Way</span>
+              Work Your <span className="text-[#6BBF59]">Way</span>
             </h2>
             <p className="text-lg sm:text-xl text-[#5E5E5E] max-w-3xl mx-auto">
               Whether you're in Bengaluru or working remotely, we've got you covered.
@@ -428,7 +428,7 @@ export default function CareersRebrand() {
 
       {/* Perks & Benefits Section */}
       <section ref={perksRef} className="relative py-20 sm:py-32 bg-white overflow-hidden">
-        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-[#2F7D63] to-transparent" />
+        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-[#6BBF59] to-transparent" />
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
           <motion.div
@@ -438,7 +438,7 @@ export default function CareersRebrand() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#1F1F1F] mb-6">
-              Perks & <span className="text-[#2F7D63]">Benefits</span>
+              Perks & <span className="text-[#6BBF59]">Benefits</span>
             </h2>
             <p className="text-lg sm:text-xl text-[#5E5E5E] max-w-3xl mx-auto">
               We take care of our team so they can focus on what matters.
@@ -466,7 +466,7 @@ export default function CareersRebrand() {
                 initial={{ opacity: 0, x: index % 2 === 0 ? -20 : 20 }}
                 animate={isPerksInView ? { opacity: 1, x: 0 } : {}}
                 transition={{ delay: 0.3 + index * 0.05, duration: 0.5 }}
-                className="flex items-center gap-4 bg-[#F6F7F5] rounded-xl p-6 border border-[#D6D8D4] hover:border-[#2F7D63] transition-all duration-300"
+                className="flex items-center gap-4 bg-[#F6F7F5] rounded-xl p-6 border border-[#D6D8D4] hover:border-[#6BBF59] transition-all duration-300"
               >
                 <span className="text-[#1F1F1F] text-lg">{perk}</span>
               </motion.div>
@@ -481,7 +481,7 @@ export default function CareersRebrand() {
           >
             <a
               href="/careers/apply"
-              className="inline-flex items-center justify-center px-8 py-4 bg-[#2F7D63] hover:bg-[#256B54] text-white font-semibold text-lg rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl hover:-translate-y-1"
+              className="inline-flex items-center justify-center px-8 py-4 bg-[#6BBF59] hover:bg-[#5AA047] text-white font-semibold text-lg rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl hover:-translate-y-1"
             >
               Start Your Application →
             </a>

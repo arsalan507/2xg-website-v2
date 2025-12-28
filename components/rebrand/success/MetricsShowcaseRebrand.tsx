@@ -75,7 +75,7 @@ export default function MetricsShowcaseRebrand() {
       <div
         className="absolute inset-0 opacity-[0.02]"
         style={{
-          backgroundImage: `radial-gradient(circle at 2px 2px, #2F7D63 1px, transparent 0)`,
+          backgroundImage: `radial-gradient(circle at 2px 2px, #6BBF59 1px, transparent 0)`,
           backgroundSize: '50px 50px',
         }}
       />
@@ -88,11 +88,11 @@ export default function MetricsShowcaseRebrand() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <p className="text-[#2F7D63] font-semibold text-sm uppercase tracking-wider mb-4">
+          <p className="text-[#6BBF59] font-semibold text-sm uppercase tracking-wider mb-4">
             📊 The Numbers Don't Lie
           </p>
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#1F1F1F] mb-6 tracking-tight">
-            Performance <span className="text-[#2F7D63]">Metrics 📈</span>
+            Performance <span className="text-[#6BBF59]">Metrics 📈</span>
           </h2>
           <p className="text-lg sm:text-xl text-[#5E5E5E] max-w-3xl mx-auto leading-relaxed">
             Real results from actual Instagram Reel insights showing consistent viral performance ✨
@@ -116,19 +116,19 @@ export default function MetricsShowcaseRebrand() {
                 initial={{ opacity: 0, y: 30 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ delay: 0.3 + index * 0.1 }}
-                className="group relative bg-[#F6F7F5] rounded-2xl p-6 sm:p-8 border-2 border-[#D6D8D4] hover:border-[#2F7D63] transition-all duration-500 shadow-sm"
+                className="group relative bg-[#F6F7F5] rounded-2xl p-6 sm:p-8 border-2 border-[#D6D8D4] hover:border-[#6BBF59] transition-all duration-500 shadow-sm"
                 whileHover={{ scale: 1.02, y: -5 }}
               >
                 {/* Decorative corner */}
-                <div className="absolute top-0 right-0 w-24 h-24 bg-[#2F7D63]/5 rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="absolute top-0 right-0 w-24 h-24 bg-[#6BBF59]/5 rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
                 <div className="relative z-10">
                   {/* Reel Title */}
                   <div className="flex items-start justify-between mb-6">
-                    <h4 className="text-xl font-bold text-[#1F1F1F] group-hover:text-[#2F7D63] transition-colors duration-300">
+                    <h4 className="text-xl font-bold text-[#1F1F1F] group-hover:text-[#6BBF59] transition-colors duration-300">
                       {reel.title}
                     </h4>
-                    <span className="text-xs text-[#2F7D63] bg-[#2F7D63]/10 px-3 py-1 rounded-full font-medium">
+                    <span className="text-xs text-[#6BBF59] bg-[#6BBF59]/10 px-3 py-1 rounded-full font-medium">
                       {reel.date}
                     </span>
                   </div>
@@ -136,15 +136,15 @@ export default function MetricsShowcaseRebrand() {
                   {/* Main Metrics */}
                   <div className="grid grid-cols-3 gap-4 mb-6">
                     <div className="text-center bg-white rounded-lg p-3 border border-[#D6D8D4]">
-                      <div className="text-2xl font-bold text-[#2F7D63]">{reel.views}</div>
+                      <div className="text-2xl font-bold text-[#6BBF59]">{reel.views}</div>
                       <div className="text-xs text-[#5E5E5E]">Views</div>
                     </div>
                     <div className="text-center bg-white rounded-lg p-3 border border-[#D6D8D4]">
-                      <div className="text-2xl font-bold text-[#2F7D63]">{reel.likes}</div>
+                      <div className="text-2xl font-bold text-[#6BBF59]">{reel.likes}</div>
                       <div className="text-xs text-[#5E5E5E]">Likes</div>
                     </div>
                     <div className="text-center bg-white rounded-lg p-3 border border-[#D6D8D4]">
-                      <div className="text-2xl font-bold text-[#2F7D63]">{reel.shares}</div>
+                      <div className="text-2xl font-bold text-[#6BBF59]">{reel.shares}</div>
                       <div className="text-xs text-[#5E5E5E]">Shares</div>
                     </div>
                   </div>
@@ -190,10 +190,10 @@ export default function MetricsShowcaseRebrand() {
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={isInView ? { opacity: 1, scale: 1 } : {}}
                 transition={{ delay: 0.7 + index * 0.1 }}
-                className="bg-white rounded-xl p-6 border-2 border-[#D6D8D4] hover:border-[#2F7D63] transition-all duration-300 shadow-sm"
+                className="bg-white rounded-xl p-6 border-2 border-[#D6D8D4] hover:border-[#6BBF59] transition-all duration-300 shadow-sm"
                 whileHover={{ scale: 1.05 }}
               >
-                <div className="text-4xl font-bold text-[#2F7D63] mb-3">
+                <div className="text-4xl font-bold text-[#6BBF59] mb-3">
                   {milestone.value}
                 </div>
                 <div className="text-lg font-bold text-[#1F1F1F] mb-2">
@@ -219,7 +219,7 @@ export default function MetricsShowcaseRebrand() {
           </p>
           <button
             onClick={handleCTAClick}
-            className="inline-flex items-center justify-center px-10 py-4 bg-[#2F7D63] hover:bg-[#256B54] text-white font-bold text-lg rounded-lg transition-all duration-200 shadow-md hover:shadow-lg cursor-pointer"
+            className="inline-flex items-center justify-center px-10 py-4 bg-[#6BBF59] hover:bg-[#5AA047] text-white font-bold text-lg rounded-lg transition-all duration-200 shadow-md hover:shadow-lg cursor-pointer"
           >
             Let's Talk Growth 💬
           </button>

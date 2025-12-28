@@ -11,7 +11,7 @@ export default function FooterRebrand() {
           <div className="md:col-span-1">
             <div className="flex items-center space-x-2 mb-4">
               <span className="text-2xl font-bold tracking-tight">
-                <span className="text-[#2F7D63]">2X</span>
+                <span className="text-[#6BBF59]">2X</span>
                 <span className="text-[#1F1F1F]">G</span>
               </span>
             </div>
@@ -24,9 +24,9 @@ export default function FooterRebrand() {
           <div>
             <h3 className="text-[#1F1F1F] font-semibold mb-4 text-sm uppercase tracking-wider">Services</h3>
             <ul className="space-y-3">
-              <li><a href="/services" className="text-[#5E5E5E] hover:text-[#2F7D63] transition-colors text-sm">Content Systems</a></li>
-              <li><a href="/services" className="text-[#5E5E5E] hover:text-[#2F7D63] transition-colors text-sm">Performance Amplification</a></li>
-              <li><a href="/services" className="text-[#5E5E5E] hover:text-[#2F7D63] transition-colors text-sm">Funnel Optimization</a></li>
+              <li><a href="/services" className="text-[#5E5E5E] hover:text-[#6BBF59] transition-colors text-sm">Content Systems</a></li>
+              <li><a href="/services" className="text-[#5E5E5E] hover:text-[#6BBF59] transition-colors text-sm">Performance Amplification</a></li>
+              <li><a href="/services" className="text-[#5E5E5E] hover:text-[#6BBF59] transition-colors text-sm">Funnel Optimization</a></li>
             </ul>
           </div>
 
@@ -34,10 +34,10 @@ export default function FooterRebrand() {
           <div>
             <h3 className="text-[#1F1F1F] font-semibold mb-4 text-sm uppercase tracking-wider">Company</h3>
             <ul className="space-y-3">
-              <li><a href="/about" className="text-[#5E5E5E] hover:text-[#2F7D63] transition-colors text-sm">About Us</a></li>
-              <li><a href="/pricing" className="text-[#5E5E5E] hover:text-[#2F7D63] transition-colors text-sm">Pricing</a></li>
-              <li><a href="/success-stories" className="text-[#5E5E5E] hover:text-[#2F7D63] transition-colors text-sm">Success Stories</a></li>
-              <li><a href="/careers" className="text-[#5E5E5E] hover:text-[#2F7D63] transition-colors text-sm">Careers</a></li>
+              <li><a href="/about" className="text-[#5E5E5E] hover:text-[#6BBF59] transition-colors text-sm">About Us</a></li>
+              <li><a href="/pricing" className="text-[#5E5E5E] hover:text-[#6BBF59] transition-colors text-sm">Pricing</a></li>
+              <li><a href="/success-stories" className="text-[#5E5E5E] hover:text-[#6BBF59] transition-colors text-sm">Success Stories</a></li>
+              <li><a href="/careers" className="text-[#5E5E5E] hover:text-[#6BBF59] transition-colors text-sm">Careers</a></li>
             </ul>
           </div>
 
@@ -45,9 +45,9 @@ export default function FooterRebrand() {
           <div>
             <h3 className="text-[#1F1F1F] font-semibold mb-4 text-sm uppercase tracking-wider">Contact</h3>
             <ul className="space-y-3">
-              <li><a href="mailto:contact@2xg.in" className="text-[#5E5E5E] hover:text-[#2F7D63] transition-colors text-sm">contact@2xg.in</a></li>
+              <li><a href="mailto:contact@2xg.in" className="text-[#5E5E5E] hover:text-[#6BBF59] transition-colors text-sm">contact@2xg.in</a></li>
               <li><span className="text-[#5E5E5E] text-sm">Bengaluru, India</span></li>
-              <li><a href="/contact" className="text-[#2F7D63] hover:text-[#256B54] transition-colors text-sm font-medium">Get In Touch →</a></li>
+              <li><a href="/contact" className="text-[#6BBF59] hover:text-[#5AA047] transition-colors text-sm font-medium">Get In Touch →</a></li>
             </ul>
           </div>
         </div>
@@ -58,8 +58,8 @@ export default function FooterRebrand() {
             © {currentYear} 2XG. All rights reserved.
           </p>
           <div className="flex gap-6">
-            <a href="/privacy" className="text-[#5E5E5E] hover:text-[#2F7D63] transition-colors text-sm">Privacy</a>
-            <a href="/terms" className="text-[#5E5E5E] hover:text-[#2F7D63] transition-colors text-sm">Terms</a>
+            <a href="/privacy" className="text-[#5E5E5E] hover:text-[#6BBF59] transition-colors text-sm">Privacy</a>
+            <a href="/terms" className="text-[#5E5E5E] hover:text-[#6BBF59] transition-colors text-sm">Terms</a>
           </div>
         </div>
       </div>
