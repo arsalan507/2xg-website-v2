@@ -51,6 +51,28 @@ export default function CareersApplicationRebrand() {
       {/* Background Decorations */}
       <div className="absolute top-0 left-0 w-96 h-96 bg-[#6BBF59]/5 rounded-full blur-3xl" />
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#FF6A1A]/5 rounded-full blur-3xl" />
+      <div className="absolute top-1/4 right-1/4 w-72 h-72 bg-[#0052FF]/5 rounded-full blur-3xl" />
+
+      {/* Grid Pattern Overlay */}
+      <div className="absolute inset-0 opacity-[0.02]" style={{
+        backgroundImage: `
+          linear-gradient(to right, #6BBF59 1px, transparent 1px),
+          linear-gradient(to bottom, #6BBF59 1px, transparent 1px)
+        `,
+        backgroundSize: '60px 60px'
+      }} />
+
+      {/* Subtle Diagonal Lines */}
+      <div className="absolute inset-0 opacity-[0.03]">
+        <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <pattern id="diagonal-lines" patternUnits="userSpaceOnUse" width="100" height="100" patternTransform="rotate(45)">
+              <line x1="0" y1="0" x2="0" y2="100" stroke="#6BBF59" strokeWidth="1" />
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#diagonal-lines)" />
+        </svg>
+      </div>
 
       <div className="relative z-10 max-w-3xl mx-auto px-6 lg:px-8">
         {/* Header */}
