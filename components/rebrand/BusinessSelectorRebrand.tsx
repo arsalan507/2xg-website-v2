@@ -171,20 +171,6 @@ export default function BusinessSelectorRebrand() {
             </motion.div>
           )}
         </motion.div>
-
-        {/* Visual Accent */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={isInView ? { opacity: 1 } : {}}
-          transition={{ delay: 0.8, duration: 0.6 }}
-          className="mt-16 text-center"
-        >
-          <div className="flex items-center justify-center gap-2 text-sm text-[#5E5E5E]">
-            <div className="w-8 h-px bg-[#D6D8D4]" />
-            <span>Consultative. Not Generic.</span>
-            <div className="w-8 h-px bg-[#D6D8D4]" />
-          </div>
-        </motion.div>
       </div>
     </section>
   );
