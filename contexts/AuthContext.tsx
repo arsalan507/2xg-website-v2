@@ -25,16 +25,26 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       setUser(session?.user ?? null);
       setTenantId(session?.user?.user_metadata?.tenant_id ?? null);
       setLoading(false);
-    });
-
-    // Listen for changes on auth state (sign in, sign out, etc.)
-    const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
-      setUser(session?.user ?? null);
-      setTenantId(session?.user?.user_metadata?.tenant_id ?? null);
+    }).catch(() => {
+      // Supabase connection failed — continue without auth
       setLoading(false);
     });
 
-    return () => subscription.unsubscribe();
+    // Listen for changes on auth state (sign in, sign out, etc.)
+    let subscription: { unsubscribe: () => void } | null = null;
+    try {
+      const result = supabase.auth.onAuthStateChange((_event, session) => {
+        setUser(session?.user ?? null);
+        setTenantId(session?.user?.user_metadata?.tenant_id ?? null);
+        setLoading(false);
+      });
+      subscription = result.data.subscription;
+    } catch {
+      // Supabase connection failed — continue without auth
+      setLoading(false);
+    }
+
+    return () => subscription?.unsubscribe();
   }, []);
 
   const signIn = async (email: string, password: string) => {
